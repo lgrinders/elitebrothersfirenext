@@ -8,11 +8,34 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Inter: "Inter",
+        Roboto: "Roboto",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        EliteOrange: "#f89f21",
+        EliteRed: "#E61B14",
+        EliteRed2: "#ef4827",
+      },
+      keyframes: {
+        shimmer: {
+          to: {
+            "background-position": "-200%",
+          },
+        },
+        dropdown: {
+          "0%": { opacity: "0", transform: "translateY(-10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        shimmer: "shimmer 3s linear infinite",
+        dropdown: "dropdown 0.3s ease-out",
+      },
+      backgroundSize: {
+        "200%": "200%",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-motion")],
 } satisfies Config;
