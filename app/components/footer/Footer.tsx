@@ -1,6 +1,4 @@
 import { FaFacebookF, FaYelp } from "react-icons/fa";
-import { IoChevronForward } from "react-icons/io5";
-import { Link } from "react-router";
 import Logo from "../ui/logo/logo";
 import Button from "../ui/button/Button";
 
