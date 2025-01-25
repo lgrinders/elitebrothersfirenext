@@ -11,8 +11,8 @@ const WhatSetsUs = () => {
         <p className="text-center text-sm text-neutral-500 lg:text-lg dark:text-white">
           Choosing Elite Brothers Fire & Safety means opting for a team that
           prioritizes safety, quality, and reliability. Our business is
-          family-owned and family-operated, and we're also proud to be locally
-          owned and operated. We know that our integrity matters! Plus, we're
+          family-owned and family-operated, and we are also proud to be locally
+          owned and operated. We know that our integrity matters! Plus, we are
           fully licensed and insured for your protection and ours. Our fire
           suppression license and our fire extinguisher license are renewed
           annually. Our team has over 15 years of combined experience to ensure

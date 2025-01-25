@@ -79,7 +79,6 @@ const ImageCarousel = () => {
               <img
                 loading={imageItem.id === currentImage ? "eager" : "lazy"}
                 src={imageItem.images?.large}
-                role="presentation"
                 className="pointer-events-none h-full w-full object-cover"
               />
             </picture>

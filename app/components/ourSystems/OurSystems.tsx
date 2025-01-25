@@ -44,7 +44,6 @@ const OurSystems = () => {
                 <img
                   loading="eager"
                   src={dataItem.images?.large}
-                  role="presentation"
                   className="pointer-events-none h-full w-full object-cover"
                 />
               </picture>

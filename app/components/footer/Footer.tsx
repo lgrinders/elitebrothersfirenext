@@ -14,7 +14,6 @@ const Footer = () => {
         <p>1015 Mt. Vernon Road Bethpage, TN 37022</p>
         <Button to={"/contact#topOfPageHeader"} name="DIRECTIONS" />
       </div>
-
       <div className="flex max-w-[300px] flex-col gap-2 xl:w-[300px]">
         <h2 className="text-xl font-semibold">CONTACT US</h2>
         <hr className="h-1 max-w-64 border-0 bg-neutral-700" />
