@@ -1,24 +1,21 @@
 import Head from "next/head";
-import ImageCarousel from "./components/imageCarousel/ImageCarousel";
-import InformationalContent from "./components/informationalContent/InformationalContent";
+import Carousel from "./components/carousel/Carousel";
 import OurSystems from "./components/ourSystems/OurSystems";
 import ServiceArea from "./components/serviceArea/ServiceArea";
 import WhatSetsUs from "./components/whatSetsUs/WhatSetsUs";
+import InformationalContent from "./components/informationalContent/InformationalContent";
 
 export default function Home() {
   return (
     <>
       <Head>
-        {/* Set the page title */}
         <title>Fire Safety | Elite Brothers Fire & Safety</title>
 
-        {/* Add meta description */}
         <meta
           name="description"
           content="Protect your property with Elite Brothers Fire & Safety. Comprehensive fire safety systems for Nashville and surrounding areas."
         />
 
-        {/* Link to the favicon */}
         <link
           rel="icon"
           href="/elitebrothersfaviconwide.png"
@@ -27,10 +24,10 @@ export default function Home() {
       </Head>
       <main>
         <div className="relative h-[550px] xl:h-[650px]">
-          <ImageCarousel />
+          <Carousel />
         </div>
         <InformationalContent />
-        <OurSystems />
+        {/* <OurSystems /> */}
         <WhatSetsUs />
         <ServiceArea />
       </main>

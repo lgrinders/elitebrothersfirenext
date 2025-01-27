@@ -315,56 +315,15 @@ export const navigationData = [
     ],
   },
   { id: 3, label: "Contact", path: "/contact" },
-  {
-    id: 4,
-    label: "REQUEST QUOTE",
-    path: "/quote",
-  },
 ];
 
-export const imageData = [
-  {
-    id: 0,
-    images: {
-      large: "/Nashville-1920.webp",
-      medium: "/Nashville-1280.webp",
-      small: "/Nashville-750.webp",
-      // largeWebp: "/Nashville-1920.webp",
-      // mediumWebp: "/Nashville-1280.webp",
-      // smallWebp: "/Nashville-750.webp",
-    },
-    alt: "Image of Nashville Tennessee",
-    title: "PROUDLY SERVING NASHVILLE",
-    subTitle: "BUILDING EXCELLENCE IN FIRE PROTECTION",
-    body: "Born and raised in the Nashville area, we will treat you like family. Fire safety is what we bring to the table in the state of Tennessee.",
-  },
-  {
-    id: 1,
-    images: {
-      large: "/extinguishers-1920.webp",
-      medium: "/extinguishers-1280.webp",
-      small: "/extinguishers-750.webp",
-      // largeWebp: "/extinguishers-1920.webp",
-      // mediumWebp: "/extinguishers-1280.webp",
-      // smallWebp: "/extinguishers-750.webp",
-    },
-    alt: "Assortment of fire extinguishers",
-    title: "YOUR FIRE SAFETY EXPERTS",
-    subTitle: "EXPERIENCED PROFESSIONALS",
-    body: "Our team specializes in servicing fire extinguishers, fire suppression systems, and exit lighting to ensure safety and compliance in businesses and public spaces.",
-    extraText: ["Nashville", "Murfreesboro", "Smyrna"],
-  },
-];
+
 
 export const ourSystemsData = [
   {
     id: 0,
     title: "Fire Extinguishers",
-    images: {
-      large: "/services-extinguisher-1010.webp",
-      medium: "/services-extinguisher-570.webp",
-      small: "/services-extinguisher-340.webp",
-    },
+    images: {},
     path: "/fire-extinguisher-services",
     paragraph:
       "At Elite Brothers Fire & Safety, we offer a comprehensive range of fire extinguisher services, including sales, maintenance, and inspections.",
@@ -372,11 +331,7 @@ export const ourSystemsData = [
   {
     id: 1,
     title: "Kitchen Fire Suppression",
-    images: {
-      large: "/services-kitchen-1010.webp",
-      medium: "/services-kitchen-570.webp",
-      small: "/services-kitchen-340.webp",
-    },
+    image: "",
     path: "/fire-suppression-services",
     paragraph:
       "We specialize in the installation, maintenance, and repair of various fire suppression systems, ensuring they are tailored to your specific environment and needs.",

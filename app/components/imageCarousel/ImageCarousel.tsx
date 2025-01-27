@@ -1,10 +1,33 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { imageData } from "../../assets/data";
+
 import Button2 from "../ui/button2/Button2";
+import extinguisherImage from "../../../public/extinguish.jpg";
+import NashvilleImage from "../../../public/Nashville.jpg";
+import Image from "next/image";
 
 const ImageCarousel = () => {
+  const imageData = [
+    {
+      id: 0,
+      image: NashvilleImage,
+      alt: "Image of Nashville Tennessee",
+      title: "PROUDLY SERVING NASHVILLE",
+      subTitle: "BUILDING EXCELLENCE IN FIRE PROTECTION",
+      body: "Born and raised in the Nashville area, we will treat you like family. Fire safety is what we bring to the table in the state of Tennessee.",
+    },
+    {
+      id: 1,
+      image: extinguisherImage,
+      alt: "Man holding a fire extinguisher",
+      title: "YOUR FIRE SAFETY EXPERTS",
+      subTitle: "EXPERIENCED PROFESSIONALS",
+      body: "Our team specializes in servicing fire extinguishers, fire suppression systems, and exit lighting to ensure safety and compliance in businesses and public spaces.",
+      extraText: ["Nashville", "Murfreesboro", "Smyrna"],
+    },
+  ];
+
   const [setTimeoutEnabled, setSetTimeoutEnabled] = useState<boolean>(true);
   const [currentImage, setCurrentImage] = useState<number>(0);
 
@@ -24,22 +47,6 @@ const ImageCarousel = () => {
     setSetTimeoutEnabled(false);
     setTimeout(() => setSetTimeoutEnabled(true), 1000); // Re-enable auto-play after a short delay
   };
-
-  useEffect(() => {
-    imageData.forEach((imageItem) => {
-      if (imageItem.images?.large) {
-        const link = document.createElement("link");
-        link.rel = "preload";
-        link.as = "image";
-        link.href = imageItem.images.large;
-        document.head.appendChild(link);
-
-        return () => {
-          document.head.removeChild(link);
-        };
-      }
-    });
-  }, []);
 
   return (
     <>
@@ -63,25 +70,15 @@ const ImageCarousel = () => {
           >
             <span className="absolute h-full w-full bg-gradient-to-t from-black to-black/40"></span>
 
-            <picture>
-              <source
-                srcSet={imageItem.images?.small}
-                media="(max-width: 750px)"
-              />
-              <source
-                srcSet={imageItem.images?.medium}
-                media="(max-width: 1280px)"
-              />
-              <source
-                srcSet={imageItem.images?.large}
-                media="(min-width: 1281px)"
-              />
-              <img
-                loading={imageItem.id === currentImage ? "eager" : "lazy"}
-                src={imageItem.images?.large}
-                className="pointer-events-none h-full w-full object-cover"
-              />
-            </picture>
+            <Image
+              loading={imageItem.id === currentImage ? "eager" : "lazy"}
+              src={imageItem.image}
+              className="pointer-events-none h-full w-full object-cover"
+              width={1920}
+              height={1080}
+              alt={imageItem.alt}
+              placeholder="blur"
+            />
 
             <div
               className="absolute flex w-full flex-col items-center justify-center gap-5 text-center text-white motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-duration-[1.50s] xl:gap-5"

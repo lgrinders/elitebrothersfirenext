@@ -4,14 +4,14 @@ import Button2 from "../ui/button2/Button2";
 const OurSystems = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center gap-5 bg-neutral-100 dark:bg-neutral-900"
+      className="flex flex-col items-center justify-center gap-5 bg-neutral-100"
       id="ourSystems"
     >
       <article className="gap-50 flex max-w-[900px] flex-col items-start justify-center px-10 pt-10 sm:items-center lg:px-14">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl dark:text-white">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl">
           SYSTEMS WE WORK WITH
         </h2>
-        <p className="text-sm text-neutral-500 sm:text-center lg:text-lg dark:text-white">
+        <p className="text-sm text-neutral-500 sm:text-center lg:text-lg">
           Elite Brothers Fire believes in doing what we do as best we can. We
           are experts reguarding{" "}
           <span className="font-bold">
@@ -30,20 +30,20 @@ const OurSystems = () => {
             <article className="relative flex h-[500px]" key={dataItem.id}>
               <picture>
                 <source
-                  srcSet={dataItem.images?.small}
+                  srcSet={dataItem.image}
                   media="(max-width: 340px)"
                 />
                 <source
-                  srcSet={dataItem.images?.medium}
+                  srcSet={dataItem.image}
                   media="(max-width: 570px)"
                 />
                 <source
-                  srcSet={dataItem.images?.large}
+                  srcSet={dataItem.image}
                   media="(min-width: 1010px)"
                 />
                 <img
                   loading="eager"
-                  src={dataItem.images?.large}
+                  src={dataItem.image}
                   className="pointer-events-none h-full w-full object-cover"
                 />
               </picture>

@@ -2,7 +2,7 @@ import { topofPageHeaderData } from "../../assets/data";
 
 const TopPageBanner = () => {
   return (
-    <section className="md:text-md relative z-10 hidden h-12 items-center gap-5 bg-neutral-900 px-5 font-Inter text-sm md:flex">
+    <section className="md:text-md hidden h-10 items-center gap-5 bg-neutral-900 px-5 text-sm md:flex">
       {topofPageHeaderData.map((dataItem, index) => (
         <div
           key={index}

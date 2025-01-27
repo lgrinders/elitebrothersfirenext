@@ -4,6 +4,7 @@ import { IoChevronDown } from "react-icons/io5";
 import { navigationData } from "@/app/assets/data";
 import { useState } from "react";
 import Link from "next/link";
+import Button3 from "../ui/button3/Button3";
 
 const TopPageNavigation = () => {
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
@@ -12,12 +13,12 @@ const TopPageNavigation = () => {
   const clearHover = () => setHoverIndex(null);
 
   return (
-    <nav className="hidden justify-center bg-EliteRed text-white md:flex md:text-base">
+    <nav className="hidden items-center justify-center gap-2 bg-EliteRed text-white md:flex md:text-base font-semibold">
       <ul className="flex">
         {navigationData.map((item, idx) => (
           <li
             key={idx}
-            className="relative flex h-12 cursor-pointer items-center justify-center font-bold tracking-wide duration-200 last-of-type:bg-EliteRed2 hover:bg-neutral-200 hover:text-black last-of-type:hover:bg-neutral-900 last-of-type:hover:text-white"
+            className="relative flex h-14 cursor-pointer items-center justify-center tracking-wide duration-200 hover:bg-neutral-200 hover:text-black"
             onMouseEnter={() => handleHover(idx)}
             onMouseLeave={clearHover}
             onFocus={() => handleHover(idx)}
@@ -64,6 +65,7 @@ const TopPageNavigation = () => {
           </li>
         ))}
       </ul>
+      <Button3 to="/quote" name="REQUEST QUOTE" />
     </nav>
   );
 };
