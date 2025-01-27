@@ -5,9 +5,10 @@ import extinguisherImage from "../../../public/extinguish.jpg";
 import NashvilleImage from "../../../public/Nashville.jpg";
 import Button3 from "../ui/button3/Button3";
 import Image from "next/image";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function EmblaCarousel() {
-  const [emblaRef] = useEmblaCarousel();
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   const imageData = [
     {
@@ -35,7 +36,7 @@ export default function EmblaCarousel() {
         {imageData.map((imageItem) => (
           <div
             key={`${imageItem.id}`}
-            className="embla__slide flex items-center justify-center duration-200"
+            className="embla__slide flex items-center justify-center"
           >
             <span className="absolute h-full w-full bg-gradient-to-t from-black to-black/40"></span>
 
@@ -44,7 +45,7 @@ export default function EmblaCarousel() {
               src={imageItem.image}
               className="pointer-events-none h-full w-full object-cover"
               width={1920}
-              height={1080}
+              height={650}
               alt={imageItem.alt}
               placeholder="blur"
             />

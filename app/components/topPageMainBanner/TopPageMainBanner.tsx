@@ -14,7 +14,7 @@ const TopPageMainBanner = () => {
   };
 
   return (
-    <section className="flex items-center justify-between bg-neutral-200 p-4 font-semibold">
+    <section className="flex items-center justify-between bg-neutral-200 p-2 font-semibold">
       <div className="hidden w-1/3 md:block"></div>
       <div className="flex items-center justify-center md:w-1/3">
         <Logo />
@@ -25,9 +25,7 @@ const TopPageMainBanner = () => {
           aria-label="call us at 6152009308"
           className="stext-center flex flex-col items-center"
         >
-          <span className="leading-5">
-            SPEAK WITH A REPRESENTATIVE TODAY
-          </span>
+          <span className="leading-5">SPEAK WITH A REPRESENTATIVE TODAY</span>
           <span className="animate-shimmer bg-gradient-to-r from-EliteOrange via-EliteRed to-EliteOrange bg-200% bg-clip-text text-2xl font-black italic leading-5 text-transparent">
             CALL 615.200.9308
           </span>

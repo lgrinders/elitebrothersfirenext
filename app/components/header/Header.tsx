@@ -7,7 +7,7 @@ export default function Header() {
     <>
       <TopPageBanner />
       <header className="sticky top-0 z-10">
-        <TopPageMainBanner />
+        {/* <TopPageMainBanner /> */}
         <TopPageNavigation />
       </header>
     </>

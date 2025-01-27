@@ -11,7 +11,7 @@ export default function Logo() {
       <Image
         src="/elitebrotherslogowide.svg"
         alt="Elite Brothers Fire Logo"
-        className="h-14 w-14 md:h-20 md:w-20"
+        className="h-14 w-14"
         width={64}
         height={64}
         priority

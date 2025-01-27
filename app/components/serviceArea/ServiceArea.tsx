@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button2 from "../ui/button2/Button2";
+import Button3 from "../ui/button3/Button3";
 
 const ServiceArea = () => {
   return (
@@ -22,7 +22,7 @@ const ServiceArea = () => {
             your county is not displayed here, give us a call and we will see
             what we can do for you!
           </p>
-          <Button2 to="/quote" name="REQUEST QUOTE" />
+          <Button3 to="/quote" name="REQUEST QUOTE" />
         </article>
       </div>
 

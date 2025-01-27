@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({ name, to }) => {
   return (
     <Link
       href={`${to}`}
-      className="flex  px-5 items-center rounded-md justify-center gap-2 duration-200 bg-neutral-100 hover:bg-neutral-800 hover:text-white h-12 text-black font-semibold"
+      className="flex p-5 items-center rounded-md justify-center gap-2 duration-200 bg-EliteRed text-white hover:bg-EliteRed2 hover:text-white font-bold"
     >
       <span>{name}</span>
       <FaCircleChevronRight size={15} />

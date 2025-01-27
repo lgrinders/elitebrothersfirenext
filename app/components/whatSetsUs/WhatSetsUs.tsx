@@ -1,9 +1,8 @@
 import { whyData } from "../../assets/data";
-import Button2 from "../ui/button2/Button2";
 
 const WhatSetsUs = () => {
   return (
-    <section className="flex w-full flex-col items-center gap-10 bg-white px-10 py-10 text-center xl:px-14">
+    <section className="flex w-full flex-col items-center gap-5 bg-white px-10 py-10 text-center xl:px-14">
       <article className="flex max-w-[900px] flex-col gap-5">
         <h2 className="text-2xl font-normal md:text-3xl lg:text-4xl xl:text-5xl">
           WHAT SETS US APART
@@ -24,7 +23,7 @@ const WhatSetsUs = () => {
         {whyData.map((whyItem, idx) => {
           return (
             <div
-              className="group flex cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-EliteRed bg-neutral-100 p-5 duration-200 hover:shadow-xl"
+              className="group flex cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border-dotted border-4 border-EliteRed bg-neutral-100 p-5 duration-200 hover:shadow-xl"
               key={idx}
             >
               <span className="text-EliteRed">{whyItem.icon}</span>
@@ -41,7 +40,6 @@ const WhatSetsUs = () => {
           );
         })}
       </div>
-      <Button2 to="/quote" name="REQUEST QUOTE" />
     </section>
   );
 };
