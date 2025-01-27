@@ -3,13 +3,11 @@
 import useEmblaCarousel from "embla-carousel-react";
 import extinguisherImage from "../../../public/extinguish.jpg";
 import NashvilleImage from "../../../public/Nashville.jpg";
-import { useState } from "react";
 import Button3 from "../ui/button3/Button3";
 import Image from "next/image";
 
 export default function EmblaCarousel() {
   const [emblaRef] = useEmblaCarousel();
-  const [currentImage, setCurrentImage] = useState<number>(0);
 
   const imageData = [
     {
@@ -30,8 +28,6 @@ export default function EmblaCarousel() {
       extraText: ["Nashville", "Murfreesboro", "Smyrna"],
     },
   ];
-
-  console.log(currentImage);
 
   return (
     <div className="embla h-[550px] xl:h-[650px]" ref={emblaRef}>

@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Carousel from "./components/carousel/Carousel";
-import OurSystems from "./components/ourSystems/OurSystems";
 import ServiceArea from "./components/serviceArea/ServiceArea";
 import WhatSetsUs from "./components/whatSetsUs/WhatSetsUs";
 import InformationalContent from "./components/informationalContent/InformationalContent";
