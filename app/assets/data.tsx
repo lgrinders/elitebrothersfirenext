@@ -1,16 +1,67 @@
-import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import {
   FaFireExtinguisher,
   FaHandHoldingWater,
   FaRegCalendarAlt,
 } from "react-icons/fa";
-import { FaTruckFast } from "react-icons/fa6";
 import { GiElectricalResistance, GiOfficeChair } from "react-icons/gi";
-import { IoMdHome } from "react-icons/io";
 import { LuSiren } from "react-icons/lu";
-import { MdEmail, MdOutlineSentimentSatisfied, MdPhone } from "react-icons/md";
-import { PiHandCoinsFill } from "react-icons/pi";
-import { RiSpeedMiniFill } from "react-icons/ri";
+import { MdEmail, MdPhone } from "react-icons/md";
+
+import {
+  BsCurrencyDollar,
+  BsEmojiSmileFill,
+  BsEmojiSunglassesFill,
+  BsFillHouseHeartFill,
+  BsPatchCheckFill,
+  BsSpeedometer,
+} from "react-icons/bs";
+
+export const whyData = [
+  {
+    icon: <BsSpeedometer size={40} />,
+    iconLabel: "spedometer icon",
+    title: "24/7 Reliability",
+    body: "Reach out when you need us most and we will be here to assist with anything fire related.",
+  },
+  {
+    icon: <BsPatchCheckFill size={40} />,
+    iconLabel: "verified icon",
+    title: "Fully Licensed and Insured",
+    body: "Being fully licensed and insured means that we know what we're doing and we know how to help you.",
+  },
+  {
+    icon: <BsFillHouseHeartFill size={40} />,
+    iconLabel: "house icon",
+    title: "Local Family Owned",
+    body: "We bring a feel and attention to detail that large corporations just can't replicate.",
+  },
+  {
+    icon: <BsEmojiSmileFill size={40} />,
+    iconLabel: "smiley face icon",
+    title: "Customer Satisfaction",
+    body: "Dedication to total customer satisfaction is at the core of our business and every job we perform.",
+  },
+  {
+    icon: <BsCurrencyDollar size={40} />,
+    iconLabel: "dollar sign icon",
+    title: "Transparent Pricing",
+    body: "We provide fair, and up-front pricing.",
+  },
+  {
+    icon: <BsEmojiSunglassesFill size={40} />,
+    iconLabel: "fast forward icon",
+    title: "Free Same Day Quote",
+    body: "Let us know what you need and we can give you a price back as quick as possible.",
+  },
+];
+
+export const infoContentData = {
+  title: "PROTECTING LIVES AND PROPERTY",
+  body1:
+    "Protect your property with help from Elite Brothers Fire & Safety. With a full range of fire safety services, we can make sure your commercial location is safe and compliant in Nashville, TN and beyond. From fire suppression systems to fire extinguishers, we'll provide the solutions your property needs.",
+  body2:
+    "We focus on providing quality service with a safety-first approach. All our work is guaranteed in writing, and we offer free, same-day, no-obligation quotes. Contact us now to get started. Same-day service and same-day appointments are available with 24/7 emergency support!",
+};
 
 export const fireExtinguisherInfo = [
   {
@@ -317,8 +368,6 @@ export const navigationData = [
   { id: 3, label: "Contact", path: "/contact" },
 ];
 
-
-
 export const ourSystemsData = [
   {
     id: 0,
@@ -401,53 +450,6 @@ export const FAQData = [
     body: "You can count on Elite Brothers Fire & Safety to provide monthly maintenance and annual inspections. We’ll make sure you meet emergency lighting testing requirements. Let us provide you with confidence in the performance of your safety lighting systems.",
   },
 ];
-
-export const whyData = [
-  {
-    icon: <FaTruckFast size={70} />,
-    iconLabel: "fast moving truck icon",
-    title: "24/7 Reliability",
-    body: "Reach out when you need us most and we will be here to assist with anything fire related.",
-  },
-  {
-    icon: <AiOutlineSafetyCertificate size={70} />,
-    iconLabel: "certificate icon",
-    title: "Fully Licensed and Insured",
-    body: "Being fully licensed and insured means that we know what we're doing and we know how to help you.",
-  },
-  {
-    icon: <IoMdHome size={70} />,
-    iconLabel: "house icon",
-    title: "Local Family Owned",
-    body: "We bring a feel and attention to detail that large corporations just can't replicate.",
-  },
-  {
-    icon: <MdOutlineSentimentSatisfied size={70} />,
-    iconLabel: "smiley face icon",
-    title: "Customer Satisfaction",
-    body: "Dedication to total customer satisfaction is at the core of our business and every job we perform.",
-  },
-  {
-    icon: <PiHandCoinsFill size={70} />,
-    iconLabel: "hand holding coins icon",
-    title: "Transparent Pricing",
-    body: "We provide fair, and up-front pricing.",
-  },
-  {
-    icon: <RiSpeedMiniFill size={70} />,
-    iconLabel: "fast forward icon",
-    title: "Free Same Day Quote",
-    body: "Let us know what you need and we can give you a price back as quick as possible.",
-  },
-];
-
-export const infoContentData = {
-  title: "PROTECTING LIVES AND PROPERTY",
-  body1:
-    "Protect your property with help from Elite Brothers Fire & Safety. With a full range of fire safety services, we can make sure your commercial location is safe and compliant in Nashville, TN and beyond. From fire suppression systems to fire extinguishers, we'll provide the solutions your property needs.",
-  body2:
-    "We focus on providing quality service with a safety-first approach. All our work is guaranteed in writing, and we offer free, same-day, no-obligation quotes. Contact us now to get started. Same-day service and same-day appointments are available with 24/7 emergency support!",
-};
 
 export const topofPageHeaderData = [
   {

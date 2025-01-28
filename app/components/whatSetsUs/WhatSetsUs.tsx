@@ -23,7 +23,7 @@ const WhatSetsUs = () => {
         {whyData.map((whyItem, idx) => {
           return (
             <div
-              className="group flex cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border-dotted border-4 border-EliteRed bg-neutral-100 p-5 duration-200 hover:shadow-xl"
+              className="group flex cursor-pointer flex-col items-center justify-apart gap-2 h-56 rounded-xl border-dotted border-4 border-EliteRed bg-neutral-100 p-5 duration-200 hover:shadow-xl"
               key={idx}
             >
               <span className="text-EliteRed">{whyItem.icon}</span>

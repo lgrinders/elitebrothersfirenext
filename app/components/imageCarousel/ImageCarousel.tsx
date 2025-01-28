@@ -75,7 +75,7 @@ const ImageCarousel = () => {
               src={imageItem.image}
               className="pointer-events-none h-full w-full object-cover"
               width={1920}
-              height={1080}
+              height={800}
               alt={imageItem.alt}
               placeholder="blur"
             />

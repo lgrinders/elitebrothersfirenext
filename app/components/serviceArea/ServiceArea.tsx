@@ -28,11 +28,11 @@ const ServiceArea = () => {
 
       <Image
         loading="lazy"
-        src="/Mural-1920.webp"
+        src="/batman.jpg"
         className="pointer-events-none h-full w-full object-cover"
         alt="A Nashville mural"
         width={1920}
-        height={1080}
+        height={800}
       />
     </section>
   );
