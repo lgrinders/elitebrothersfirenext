@@ -1,3 +1,4 @@
+// import Image from "next/image";
 import { ourSystemsData } from "../../assets/data";
 import Button2 from "../ui/button2/Button2";
 
@@ -29,23 +30,14 @@ const OurSystems = () => {
           return (
             <article className="relative flex h-[500px]" key={dataItem.id}>
               <picture>
-                <source
-                  srcSet={dataItem.image}
-                  media="(max-width: 340px)"
-                />
-                <source
-                  srcSet={dataItem.image}
-                  media="(max-width: 570px)"
-                />
-                <source
-                  srcSet={dataItem.image}
-                  media="(min-width: 1010px)"
-                />
-                <img
+                <source srcSet={dataItem.image} media="(max-width: 340px)" />
+                <source srcSet={dataItem.image} media="(max-width: 570px)" />
+                <source srcSet={dataItem.image} media="(min-width: 1010px)" />
+                {/* <Image
                   loading="eager"
                   src={dataItem.image}
                   className="pointer-events-none h-full w-full object-cover"
-                />
+                /> */}
               </picture>
 
               <div className="absolute flex h-full w-full flex-col justify-end gap-5 overflow-hidden bg-black/60 px-5 duration-200 hover:bg-black/70">

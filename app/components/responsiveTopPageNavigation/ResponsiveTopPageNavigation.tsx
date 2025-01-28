@@ -91,8 +91,8 @@ const ResponsiveTopPageNavigation = () => {
                           href={child.path}
                           className="flex justify-center px-2 py-5 bg-EliteRed hover:bg-EliteRed2 w-full"
                           onClick={() => {
-                            setSelectedIndex(null),
-                              setSideNavigationShowing(false);
+                            setSelectedIndex(null);
+                            setSideNavigationShowing(false);
                           }}
                           role="menuitem"
                           tabIndex={selectedIndex === idx ? 0 : -1}
