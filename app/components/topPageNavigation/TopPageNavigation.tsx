@@ -14,7 +14,7 @@ const TopPageNavigation = () => {
   const clearHover = () => setHoverIndex(null);
 
   return (
-    <nav className="hidden h-full items-center justify-center gap-5 bg-white md:flex md:text-base font-bold shadow-xl">
+    <nav className="hidden items-center justify-center gap-2 lg:gap-5 bg-white lg:flex md:text-base font-bold shadow-xl">
       <Logo />
       <ul className="flex">
         {navigationData.map((item, idx) => (
@@ -27,7 +27,7 @@ const TopPageNavigation = () => {
           >
             {item.children ? (
               <button
-                className="flex items-center h-20 justify-center gap-1 w-32"
+                className="flex items-center h-20 justify-center gap-1 w-24 xl:w-32"
                 aria-haspopup="true"
                 aria-expanded={hoverIndex === idx}
                 aria-label={`Expand menu for ${item.label}`}
@@ -38,7 +38,7 @@ const TopPageNavigation = () => {
             ) : (
               <Link
                 href={item.path}
-                className="flex items-center justify-center h-20 w-32"
+                className="flex items-center justify-center h-20 w-24 xl:w-32"
               >
                 {item.label}
               </Link>
