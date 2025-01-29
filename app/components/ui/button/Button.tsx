@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({ name, to }) => {
   return (
     <Link
       href={`${to}`}
-      className="mt-2 flex h-14 w-[150px] items-center justify-center gap-2 border border-neutral-800 text-neutral-800 duration-200 hover:border-none hover:bg-neutral-800 hover:text-white"
+      className="mt-2 flex h-14 rounded-md w-[150px] items-center justify-center gap-2 border border-neutral-800 text-neutral-800 duration-200 hover:border-none hover:bg-neutral-800 hover:text-white"
     >
       <span>{name}</span>
       <IoChevronForward />

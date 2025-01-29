@@ -7,7 +7,7 @@ import Button3 from "../ui/button3/Button3";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 
-export default function EmblaCarousel() {
+export default function Carousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   const imageData = [

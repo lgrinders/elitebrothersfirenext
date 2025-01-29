@@ -1,11 +1,11 @@
-// import Image from "next/image";
+import Image from "next/image";
 import { ourSystemsData } from "../../assets/data";
 import Button2 from "../ui/button2/Button2";
 
 const OurSystems = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center gap-5 bg-neutral-100"
+      className="flex flex-col items-center justify-center gap-5 bg-white"
       id="ourSystems"
     >
       <article className="gap-50 flex max-w-[900px] flex-col items-start justify-center px-10 pt-10 sm:items-center lg:px-14">
@@ -29,16 +29,14 @@ const OurSystems = () => {
         {ourSystemsData.map((dataItem) => {
           return (
             <article className="relative flex h-[500px]" key={dataItem.id}>
-              <picture>
-                <source srcSet={dataItem.image} media="(max-width: 340px)" />
-                <source srcSet={dataItem.image} media="(max-width: 570px)" />
-                <source srcSet={dataItem.image} media="(min-width: 1010px)" />
-                {/* <Image
-                  loading="eager"
-                  src={dataItem.image}
-                  className="pointer-events-none h-full w-full object-cover"
-                /> */}
-              </picture>
+              <Image
+                loading="eager"
+                src={dataItem.image}
+                className="pointer-events-none h-full w-full object-cover"
+                alt={dataItem.title}
+                width={600}
+                height={600}
+              />
 
               <div className="absolute flex h-full w-full flex-col justify-end gap-5 overflow-hidden bg-black/60 px-5 duration-200 hover:bg-black/70">
                 <div className="flex h-3/5 flex-col items-center gap-5">

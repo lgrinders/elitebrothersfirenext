@@ -372,7 +372,7 @@ export const ourSystemsData = [
   {
     id: 0,
     title: "Fire Extinguishers",
-    images: {},
+    image: "/fireextinguisher.jpg",
     path: "/fire-extinguisher-services",
     paragraph:
       "At Elite Brothers Fire & Safety, we offer a comprehensive range of fire extinguisher services, including sales, maintenance, and inspections.",
@@ -380,7 +380,7 @@ export const ourSystemsData = [
   {
     id: 1,
     title: "Kitchen Fire Suppression",
-    image: "",
+    image: "/kitchen.jpg",
     path: "/fire-suppression-services",
     paragraph:
       "We specialize in the installation, maintenance, and repair of various fire suppression systems, ensuring they are tailored to your specific environment and needs.",
@@ -388,7 +388,7 @@ export const ourSystemsData = [
   {
     id: 2,
     title: "Emergency Lighting",
-    image: "/sign.jpg",
+    image: "/exitsign.jpg",
     path: "/emergency-lighting-services",
     paragraph:
       "At Elite Brothers Fire & Safety, we provide comprehensive services for the installation, maintenance, and inspection of exit and emergency lighting systems.",
@@ -478,5 +478,99 @@ export const topofPageHeaderData = [
       </a>
     ),
     class: "lg:flex hidden",
+  },
+];
+
+export const reviewData = [
+  {
+    id: 0,
+    name: "Eric S",
+    stars: 5,
+    body: "Best in the business. Cream of the crop. I don't know anyone that has responded to more emergency situations with their clients than this guy. When restaurants are in a pinch Bobby saves the day. He's a solid guy and knows what he is doing. Won't BS if he doesn't know something.",
+    date: "9/26/2024",
+  },
+  {
+    id: 1,
+    name: "D R",
+    stars: 5,
+    body: "Great company!!! I totally recommend!!!",
+    date: "9/18/2024",
+  },
+  {
+    id: 2,
+    name: "Cory J",
+    stars: 5,
+    body: "Very fast, and knowledgeable staff",
+    date: "9/9/2024",
+  },
+  {
+    id: 3,
+    name: "Travis J",
+    stars: 5,
+    body: "Great knowledgeable staff. Inspection was very detailed and professional. Will recommend them over any other competitors.",
+    date: "8/7/2024",
+  },
+  {
+    id: 3,
+    name: "Travis J",
+    stars: 5,
+    body: "Great knowledgeable staff. Inspection was very detailed and professional. Will recommend them over any other competitors.",
+    date: "8/7/2024",
+  },
+  {
+    id: 3,
+    name: "Travis J",
+    stars: 5,
+    body: "Great knowledgeable staff. Inspection was very detailed and professional. Will recommend them over any other competitors.",
+    date: "8/7/2024",
+  },
+  {
+    id: 3,
+    name: "Travis J",
+    stars: 5,
+    body: "Great knowledgeable staff. Inspection was very detailed and professional. Will recommend them over any other competitors.",
+    date: "8/7/2024",
+  },
+  {
+    id: 3,
+    name: "Travis J",
+    stars: 5,
+    body: "Great knowledgeable staff. Inspection was very detailed and professional. Will recommend them over any other competitors.",
+    date: "8/7/2024",
+  },
+  {
+    id: 3,
+    name: "Travis J",
+    stars: 5,
+    body: "Great knowledgeable staff. Inspection was very detailed and professional. Will recommend them over any other competitors.",
+    date: "8/7/2024",
+  },
+  {
+    id: 3,
+    name: "Travis J",
+    stars: 5,
+    body: "Great knowledgeable staff. Inspection was very detailed and professional. Will recommend them over any other competitors.",
+    date: "8/7/2024",
+  },
+  {
+    id: 3,
+    name: "Travis J",
+    stars: 5,
+    body: "Great knowledgeable staff. Inspection was very detailed and professional. Will recommend them over any other competitors.",
+    date: "8/7/2024",
+  },
+  {
+    id: 3,
+    name: "Travis J",
+    stars: 5,
+    body: "Great knowledgeable staff. Inspection was very detailed and professional. Will recommend them over any other competitors.",
+    date: "8/7/2024",
+  },
+  {
+    id: 3,
+    name: "Travis J",
+    stars: 5,
+    body: "Great knowledgeable staff. Inspection was very detailed and professional. Will recommend them over any other competitors.",
+    date: "8/7/2024",
   },
 ];
