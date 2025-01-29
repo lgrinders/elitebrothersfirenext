@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
       <TopPageBanner />
-      <header className="sticky top-0 z-10">
+      <header className="sticky top-0 z-50">
         <TopPageNavigation />
         <ResponsiveTopPageNavigation />
       </header>
