@@ -5,10 +5,10 @@ import Button2 from "../ui/button2/Button2";
 const OurSystems = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center gap-5 bg-white"
+      className="flex flex-col items-center justify-center gap-5 bg-neutral-100"
       id="ourSystems"
     >
-      <article className="gap-50 flex max-w-[900px] flex-col items-start justify-center px-10 pt-10 sm:items-center lg:px-14">
+      <article className="gap-5 flex max-w-[900px] flex-col items-start justify-center px-10 pt-10 sm:items-center lg:px-14">
         <h2 className="text-3xl md:text-4xl lg:text-5xl">
           SYSTEMS WE WORK WITH
         </h2>
@@ -25,7 +25,7 @@ const OurSystems = () => {
           </span>
         </p>
       </article>
-      <div className="grid grid-cols-1 gap-1 md:gap-0 lg:grid-cols-3">
+      <div className="grid grid-cols-1 w-full lg:grid-cols-3">
         {ourSystemsData.map((dataItem) => {
           return (
             <article className="relative flex h-[500px]" key={dataItem.id}>

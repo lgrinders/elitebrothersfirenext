@@ -8,50 +8,29 @@ import { LuSiren } from "react-icons/lu";
 import { MdEmail, MdPhone } from "react-icons/md";
 
 import {
-  BsCurrencyDollar,
-  BsEmojiSmileFill,
-  BsEmojiSunglassesFill,
   BsFillHouseHeartFill,
+  BsHandThumbsUpFill,
   BsPatchCheckFill,
-  BsSpeedometer,
 } from "react-icons/bs";
 
 export const whyData = [
   {
-    icon: <BsSpeedometer size={40} />,
+    icon: <BsHandThumbsUpFill size={70} />,
     iconLabel: "spedometer icon",
     title: "24/7 Reliability",
     body: "Reach out when you need us most and we will be here to assist with anything fire related.",
   },
   {
-    icon: <BsPatchCheckFill size={40} />,
+    icon: <BsPatchCheckFill size={70} />,
     iconLabel: "verified icon",
-    title: "Fully Licensed and Insured",
+    title: "Fully Licensed & Insured",
     body: "Being fully licensed and insured means that we know what we're doing and we know how to help you.",
   },
   {
-    icon: <BsFillHouseHeartFill size={40} />,
+    icon: <BsFillHouseHeartFill size={70} />,
     iconLabel: "house icon",
     title: "Local Family Owned",
     body: "We bring a feel and attention to detail that large corporations just can't replicate.",
-  },
-  {
-    icon: <BsEmojiSmileFill size={40} />,
-    iconLabel: "smiley face icon",
-    title: "Customer Satisfaction",
-    body: "Dedication to total customer satisfaction is at the core of our business and every job we perform.",
-  },
-  {
-    icon: <BsCurrencyDollar size={40} />,
-    iconLabel: "dollar sign icon",
-    title: "Transparent Pricing",
-    body: "We provide fair, and up-front pricing.",
-  },
-  {
-    icon: <BsEmojiSunglassesFill size={40} />,
-    iconLabel: "fast forward icon",
-    title: "Free Same Day Quote",
-    body: "Let us know what you need and we can give you a price back as quick as possible.",
   },
 ];
 

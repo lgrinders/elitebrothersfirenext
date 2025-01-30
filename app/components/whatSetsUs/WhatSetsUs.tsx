@@ -2,12 +2,12 @@ import { whyData } from "../../assets/data";
 
 const WhatSetsUs = () => {
   return (
-    <section className="flex w-full flex-col items-center gap-5 bg-white px-10 py-10 text-center xl:px-14">
+    <section className="flex w-full flex-col text-center items-center gap-5 bg-white px-10 py-10 xl:px-14">
       <article className="flex max-w-[900px] flex-col gap-5">
         <h2 className="text-2xl font-normal md:text-3xl lg:text-4xl xl:text-5xl">
           WHAT SETS US APART
         </h2>
-        <p className="text-center text-sm text-neutral-500 lg:text-lg">
+        <p className="text-sm text-neutral-500 lg:text-lg">
           Choosing Elite Brothers Fire & Safety means opting for a team that
           prioritizes safety, quality, and reliability. Our business is
           family-owned and family-operated, and we are also proud to be locally
@@ -19,21 +19,21 @@ const WhatSetsUs = () => {
         </p>
       </article>
 
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-3">
         {whyData.map((whyItem, idx) => {
           return (
             <div
-              className="group flex cursor-pointer flex-col items-center justify-apart gap-2 h-56 rounded-xl border-dotted border-4 border-EliteRed bg-neutral-100 p-5 duration-200 hover:shadow-xl"
+              className="flex cursor-pointer max-w-full lg:max-w-[420px] pt-32 flex-col items-center h-[500px] rounded-md from-neutral-200 to-neutral-100 bg-gradient-to-t p-10 shadow-xl"
               key={idx}
             >
-              <span className="text-EliteRed">{whyItem.icon}</span>
+              <span className="text-EliteRed pb-20">{whyItem.icon}</span>
               <h3
                 id={`whyItem-title-${idx}`}
-                className="text-xl md:text-2xl lg:text-3xl"
+                className="text-lg md:text-xl lg:text-2xl font-bold pb-5"
               >
                 {whyItem.title}
               </h3>
-              <p className="max-w-[400px] text-sm text-neutral-500 lg:text-lg">
+              <p className="text-md text-neutral-500 h-32 lg:text-lg">
                 {whyItem.body}
               </p>
             </div>
