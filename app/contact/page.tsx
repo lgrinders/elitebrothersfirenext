@@ -33,7 +33,7 @@ export default function Contact() {
                 <div className="flex flex-col lg:flex-row gap-10 w-full bg-gradient-to-t from-neutral-200 to-neutral-100 p-5 rounded-md shadow-xl">
                     <div className="lg:w-1/2 flex flex-col gap-5">
                         <div className="flex flex-col gap-10 w-full">
-                            <h2 className="text-3xl md:text-4xl lg:text-5xl">WE'RE READY TO HELP</h2>
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl">WE&#39;RE READY TO HELP</h2>
                             <p className="text-lg">
                                 Contact us today and connect with a member of our team! Fill out the form below, call, text or email us!
                             </p>
@@ -55,7 +55,7 @@ export default function Contact() {
                                 <div>
                                     <span className="font-semibold">Alternate Phone </span>
                                     <a href="tel:+16158402626"
-                                        aria-label="or call us at 6158402626" className="underline text-EliteRed">(615 840-2626)</a>
+                                        aria-label="or call us at 6158402626" className="underline text-EliteRed">(615) 840-2626</a>
                                 </div>
                             </div>
 

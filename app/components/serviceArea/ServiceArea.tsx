@@ -22,7 +22,7 @@ const ServiceArea = () => {
             your county is not displayed here, give us a call and we will see
             what we can do for you!
           </p>
-          <Button3 to="/quote" name="REQUEST QUOTE" />
+          <Button3 to="/contact" name="REQUEST QUOTE" />
         </article>
       </div>
 
