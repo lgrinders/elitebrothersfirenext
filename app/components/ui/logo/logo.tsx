@@ -21,7 +21,7 @@ export default function Logo() {
           <span className="leading-3 lg:leading-5">ELITE</span>
           <span className="leading-4 text-EliteRed lg:leading-5">BROTHERS</span>
         </div>
-        <h3 className="leading-3 text-[11px] font-medium tracking-widest lg:text-xs">
+        <h3 className="leading-3 text-[11px] font-lightsd tracking-widest lg:text-xs">
           FIRE & SAFETY
         </h3>
       </div>

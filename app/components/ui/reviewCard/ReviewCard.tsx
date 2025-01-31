@@ -14,7 +14,7 @@ interface ReivewCardProps {
 const ReviewCard: React.FC<ReivewCardProps> = ({ item }) => {
     return (
         <div
-            className="min-w-[350px] from-neutral-200 to-neutral-100 bg-gradient-to-t p-5 text- mr-5 h-96 flex flex-col justify-evenly rounded-md shadow-xl select-none"
+            className="min-w-[350px] from-neutral-200 to-neutral-100 bg-gradient-to-t p-5 mr-5 h-96 flex flex-col justify-evenly rounded-md shadow-xl select-none"
         >
             <span className="h-12 flex items-center font-bold text-xl">{item.name}</span>
             <div className="flex h-12 items-center gap-0.5 text-yellow-400">

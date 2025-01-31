@@ -5,6 +5,7 @@ import WhatSetsUs from "./components/whatSetsUs/WhatSetsUs";
 import InformationalContent from "./components/informationalContent/InformationalContent";
 import OurSystems from "./components/ourSystems/OurSystems";
 import ReviewCarousel from "./components/reviewCarousel/ReviewCarousel";
+import Form from "./components/ui/form/Form";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         <OurSystems />
         <WhatSetsUs />
         <ServiceArea />
+        <Form />
       </main>
     </>
   );

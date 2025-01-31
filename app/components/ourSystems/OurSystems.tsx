@@ -5,7 +5,7 @@ import Button2 from "../ui/button2/Button2";
 const OurSystems = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center gap-5 bg-neutral-100"
+      className="flex flex-col items-center text-center justify-center gap-5 bg-neutral-100"
       id="ourSystems"
     >
       <article className="gap-5 flex max-w-[900px] flex-col items-start justify-center px-10 pt-10 sm:items-center lg:px-14">
