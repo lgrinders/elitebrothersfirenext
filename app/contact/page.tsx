@@ -13,7 +13,7 @@ export default function Contact() {
 
     return (
         <section className="flex flex-col">
-            <div className="relative h-[450px] xl:h-[550px] flex justify-center items-center">
+            <div className="relative h-[350px] xl:h-[450px] flex justify-center items-center">
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-black/40"></div>
                 <Image
                     loading="eager"
