@@ -5,8 +5,6 @@ import WhatSetsUs from "./components/whatSetsUs/WhatSetsUs";
 import InformationalContent from "./components/informationalContent/InformationalContent";
 import OurSystems from "./components/ourSystems/OurSystems";
 import ReviewCarousel from "./components/reviewCarousel/ReviewCarousel";
-import Form from "./components/ui/form/Form";
-import HomeForm from "./components/homeForm/HomeForm";
 
 export default function Home() {
   return (
@@ -30,11 +28,12 @@ export default function Home() {
           <Carousel />
         </div>
         <InformationalContent />
-        <ReviewCarousel />
         <OurSystems />
-        <WhatSetsUs />
+        <ReviewCarousel />
         <ServiceArea />
-        <HomeForm />
+        <WhatSetsUs />
+
+
       </main>
     </>
   );
