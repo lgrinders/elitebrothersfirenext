@@ -22,7 +22,7 @@ const ReviewCard: React.FC<ReivewCardProps> = ({ item }) => {
                     return <BsFillStarFill size={30} key={idx} />;
                 })}
             </div>
-            <span className="h-32 flex text-neutral-500">
+            <span className="h-32 flex text-neutral-600">
                 {item.body.length > 200 ? `${item.body.substring(0, 200)}...` : item.body}
             </span>
             <span className="h-10 flex items-center">{item.date}</span>

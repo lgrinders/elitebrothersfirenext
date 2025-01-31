@@ -7,7 +7,7 @@ const WhatSetsUs = () => {
         <h2 className="text-2xl font-normal md:text-3xl lg:text-4xl xl:text-5xl">
           WHAT SETS US APART
         </h2>
-        <p className="text-sm text-neutral-500 lg:text-lg">
+        <p className="text-sm text-neutral-600 lg:text-lg">
           Choosing Elite Brothers Fire & Safety means opting for a team that
           prioritizes safety, quality, and reliability. Our business is
           family-owned and family-operated, and we are also proud to be locally
@@ -23,7 +23,7 @@ const WhatSetsUs = () => {
         {whyData.map((whyItem, idx) => {
           return (
             <div
-              className="flex cursor-pointer max-w-full lg:max-w-[420px] pt-32 flex-col items-center h-[500px] rounded-md from-neutral-200 to-neutral-100 bg-gradient-to-t p-10 shadow-xl"
+              className="flex max-w-full lg:max-w-[420px] pt-32 flex-col items-center h-[500px] rounded-md from-neutral-200 to-neutral-100 bg-gradient-to-t p-10 shadow-xl"
               key={idx}
             >
               <span className="text-EliteRed pb-20">{whyItem.icon}</span>
@@ -33,7 +33,7 @@ const WhatSetsUs = () => {
               >
                 {whyItem.title}
               </h3>
-              <p className="text-md text-neutral-500 h-32 lg:text-lg">
+              <p className="text-md text-neutral-600 h-32 lg:text-lg">
                 {whyItem.body}
               </p>
             </div>

@@ -67,7 +67,7 @@ const TopPageNavigation = () => {
           </li>
         ))}
       </ul>
-      <Button3 to="/quote" name="REQUEST QUOTE" />
+      <Button3 to="/contact" name="REQUEST QUOTE" />
     </nav>
   );
 };

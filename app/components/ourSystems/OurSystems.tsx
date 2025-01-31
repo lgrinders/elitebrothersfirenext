@@ -12,7 +12,7 @@ const OurSystems = () => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl">
           SYSTEMS WE WORK WITH
         </h2>
-        <p className="text-sm text-neutral-500 sm:text-center lg:text-lg">
+        <p className="text-sm text-neutral-600 sm:text-center lg:text-lg">
           Elite Brothers Fire believes in doing what we do as best we can. We
           are experts reguarding{" "}
           <span className="font-bold">

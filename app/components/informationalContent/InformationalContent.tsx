@@ -8,7 +8,7 @@ const InformationalContent = () => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl xl:w-2/5">
           {infoContentData.title}
         </h2>
-        <article className="flex flex-col gap-3 text-sm text-neutral-500 lg:text-lg xl:w-3/5">
+        <article className="flex flex-col gap-3 text-sm text-neutral-600 lg:text-lg xl:w-3/5">
           <p>{infoContentData.body1}</p>
           <p>{infoContentData.body2}</p>
           <Button name={"ABOUT"} to={"/about"} />
