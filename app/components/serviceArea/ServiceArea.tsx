@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button3 from "../ui/button3/Button3";
+import Button3 from "../../ui/button3/Button3";
 
 const ServiceArea = () => {
   return (

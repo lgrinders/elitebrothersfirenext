@@ -3,7 +3,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import extinguisherImage from "../../../public/extinguish.jpg";
 import NashvilleImage from "../../../public/Nashville.jpg";
-import Button3 from "../ui/button3/Button3";
+import Button3 from "../../ui/button3/Button3";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 

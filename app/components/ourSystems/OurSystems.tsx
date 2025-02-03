@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ourSystemsData } from "../../assets/data";
-import Button2 from "../ui/button2/Button2";
+import Button2 from "../../ui/button2/Button2";
 
 const OurSystems = () => {
   return (

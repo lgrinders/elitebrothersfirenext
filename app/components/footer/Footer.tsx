@@ -1,5 +1,5 @@
-import Logo from "../ui/logo/logo";
-import Button from "../ui/button/Button";
+import Logo from "../../ui/logo/logo";
+import Button from "../../ui/button/Button";
 import { BsFacebook, BsYelp } from "react-icons/bs";
 
 const Footer = () => {

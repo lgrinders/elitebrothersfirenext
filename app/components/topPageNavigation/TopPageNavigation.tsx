@@ -4,8 +4,8 @@ import { IoChevronDown } from "react-icons/io5";
 import { navigationData } from "@/app/assets/data";
 import { useState } from "react";
 import Link from "next/link";
-import Button3 from "../ui/button3/Button3";
-import Logo from "../ui/logo/logo";
+import Button3 from "../../ui/button3/Button3";
+import Logo from "../../ui/logo/logo";
 
 const TopPageNavigation = () => {
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);

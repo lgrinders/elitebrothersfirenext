@@ -2,14 +2,10 @@
 
 import Image from "next/image";
 import contact from "../../public/contact.jpg";
-import { FormEvent } from "react";
-import Form from "../components/ui/form/Form";
+import Form from "../ui/form/Form";
 import { BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
 
 export default function Contact() {
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-    };
 
     return (
         <section className="flex flex-col">
@@ -38,7 +34,7 @@ export default function Contact() {
                                 Contact us today and connect with a member of our team! Fill out the form below, call, text or email us!
                             </p>
                         </div>
-                        <Form handleSubmit={handleSubmit} />
+                        <Form />
                     </div>
                     <div className="lg:w-1/2 flex text-lg flex-col gap-10">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl">OUR INFORMATION</h2>

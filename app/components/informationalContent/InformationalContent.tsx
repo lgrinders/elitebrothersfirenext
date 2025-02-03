@@ -1,5 +1,5 @@
 import { infoContentData } from "../../assets/data";
-import Button from "../ui/button/Button";
+import Button from "../../ui/button/Button";
 
 const InformationalContent = () => {
   return (

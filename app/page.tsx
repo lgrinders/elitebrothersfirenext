@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Carousel from "./components/carousel/Carousel";
 import ServiceArea from "./components/serviceArea/ServiceArea";
 import WhatSetsUs from "./components/whatSetsUs/WhatSetsUs";
 import InformationalContent from "./components/informationalContent/InformationalContent";
 import OurSystems from "./components/ourSystems/OurSystems";
 import ReviewCarousel from "./components/reviewCarousel/ReviewCarousel";
+import Carousel from "./components/carousel/Carousel";
 
 export default function Home() {
   return (

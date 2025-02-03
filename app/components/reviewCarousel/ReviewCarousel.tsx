@@ -4,7 +4,7 @@ import { reviewData } from "@/app/assets/data";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { useEffect } from "react";
-import ReviewCard from "../ui/reviewCard/ReviewCard";
+import ReviewCard from "../../ui/reviewCard/ReviewCard";
 
 export default function ReviewCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, dragFree: true }, [Autoplay({ delay: 2000 })]);

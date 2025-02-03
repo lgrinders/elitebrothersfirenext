@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Logo from "../ui/logo/logo";
+import Logo from "../../ui/logo/logo";
 import { navigationData } from "@/app/assets/data";
 import { IoChevronDown } from "react-icons/io5";
 import Link from "next/link";
-import Hamburger from "../ui/hamburger/Hamburger";
+import Hamburger from "../../ui/hamburger/Hamburger";
 
 const ResponsiveTopPageNavigation = () => {
   const [sideNavigationShowing, setSideNavigationShowing] = useState(false);
