@@ -1,36 +1,43 @@
-import { FaFacebookF, FaYelp } from "react-icons/fa";
 import Logo from "../ui/logo/logo";
 import Button from "../ui/button/Button";
+import { BsFacebook, BsYelp } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="flex w-full flex-col justify-center gap-10 bg-white px-10 py-10 text-black sm:grid sm:grid-cols-2 md:grid-cols-3 lg:gap-20 lg:px-14 xl:flex xl:flex-row">
-      <Logo />
-      <div className="flex max-w-[300px] flex-col gap-2 xl:w-[300px]">
-        <h2 className="text-xl font-semibold">SERVING AREA</h2>
-        <hr className="h-1 max-w-64 border-0 bg-neutral-700" />
-        <p>Nashville, TN and Surrounding Areas</p>
-        <hr className="h-1 max-w-64 border-0 bg-neutral-700" />
-        <p>1015 Mt. Vernon Road Bethpage, TN 37022</p>
-        <Button to={"/contact#topOfPageHeader"} name="DIRECTIONS" />
-      </div>
-      <div className="flex max-w-[300px] flex-col gap-2 xl:w-[300px]">
-        <h2 className="text-xl font-semibold">CONTACT US</h2>
-        <hr className="h-1 max-w-64 border-0 bg-neutral-700" />
-        <p>615.200.9308</p>
-        <Button to={"/contact#topOfPageHeader"} name="MESSAGE US" />
-        <div className="mt-2 flex gap-2">
-          <FaFacebookF size={30} className="duration-200 hover:text-EliteRed" />
-          <FaYelp size={30} className="duration-200 hover:text-EliteRed" />
+    <section className="bg-white w-full px-10 lg:px-14 py-10 gap-10 flex flex-col lg:items-start items-center lg:flex-row justify-between">
+      <div className="flex flex-col lg:items-start text-sm gap-4 font-semibold w-full lg:w-2/5 items-center">
+        <Logo />
+        <div className="flex flex-col lg:text-start text-center gap-4">
+          <span>© 2025 The content on this website is owned by us and our licensors.</span>
+          <a href="https://policies.hibuwebsites.com/privacy-policy" target="_blank">Privacy Policy</a>
+          <span>Serving Nashville, TN</span>
+          <span>(615) 200-9308</span>
+          <div className="flex gap-3 lg:justify-start justify-center">
+            <a
+              href="https://www.facebook.com/people/Elite-Brothers-Fire-and-Safety/100079015032455/"
+              target="_blank"
+            >
+              <BsFacebook size={20} className="duration-200 hover:text-EliteRed" />
+            </a>
+            <a
+              href="https://www.yelp.com/biz/elite-brothers-fire-and-safety-bethpage?utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=MFyzcjahxBMNAyHg85HGjg"
+              target="_blank"
+            >
+              <BsYelp size={20} className="duration-200 hover:text-EliteRed" />
+            </a>
+          </div>
         </div>
       </div>
-
-      <div className="flex max-w-[300px] flex-col gap-2 xl:w-[300px]">
-        <h2 className="text-xl font-semibold">BUSINESS HOURS</h2>
-        <hr className="h-1 max-w-64 border-0 bg-neutral-700" />
-        <p>24/7 Emergency Services and Same-Day Appointments</p>
+      <div className="w-full flex-col gap-10 lg:flex-row lg:items-start items-center flex">
+        <div className="flex lg:w-auto w-full flex-col items-center lg:items-start gap-3"><span className="font-semibold text-sm">1051 Mt. Vernon Road Bethpage, TN 37022</span>
+          <Button to="https://www.google.com/maps/place/1051+Mt+Vernon+Rd,+Bethpage,+TN+37022/@36.542515,-86.3439939,17z/data=!3m1!4b1!4m6!3m5!1s0x88642ca620361f03:0xde436af8afc3267c!8m2!3d36.542515!4d-86.341419!16s%2Fg%2F11gdkyhzf_?entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D" name="Directions" />
+        </div>
+        <div className="flex flex-col gap-3 w-full lg:w-auto lg:items-start items-center">
+          <span className="font-semibold text-sm">24/7 Emergency Services and Same-Day Appointments</span>
+          <Button to="/contact" name="Send Message" />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
