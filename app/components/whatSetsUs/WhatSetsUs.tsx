@@ -2,7 +2,7 @@ import { whyData } from "../../assets/data";
 
 const WhatSetsUs = () => {
   return (
-    <section className="flex w-full flex-col text-center items-center gap-5 bg-white px-5 md:px-10 py-10 xl:px-14">
+    <section className="flex w-full flex-col text-center items-center gap-5 bg-neutral-100 px-5 md:px-10 py-10 xl:px-14">
       <article className="flex max-w-[900px] flex-col gap-5">
         <h2 className="text-2xl font-normal md:text-3xl lg:text-4xl xl:text-5xl">
           WHAT SETS US APART
