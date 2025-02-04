@@ -26,8 +26,6 @@ const Form = () => {
 
         setStatus("loading")
 
-        console.log(formData)
-
         try {
             const response = await fetch("/api/submit-form", {
                 method: "POST",

@@ -25,8 +25,8 @@ export default function Contact() {
                 </h1>
             </div>
 
-            <div className="relative py-10 bg-white z-10 px-5 md:px-10 flex items-center justify-center">
-                <div className="flex flex-col lg:flex-row gap-10 w-full bg-gradient-to-t from-neutral-200 to-neutral-100 p-5 rounded-md shadow-xl">
+            <div className="relative py-10 bg-neutral-100 z-10 px-5 md:px-14 flex items-center justify-center">
+                <div className="flex flex-col lg:flex-row gap-10 w-full bg-gradient-to-t from-neutral-200 to-white p-5 rounded-md shadow-xl">
                     <div className="lg:w-1/2 flex flex-col gap-5">
                         <div className="flex flex-col gap-10 w-full">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl">WE&#39;RE READY TO HELP</h2>
