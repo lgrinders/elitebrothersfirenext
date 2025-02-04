@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import extinguisher from "../../public/extinguish.jpg";
+import extinguishImage from "../../public/extinguish.jpg";
 import Form from "../ui/form/Form";
 import { BsChevronDown, BsChevronUp, BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
-import Button from "../ui/button3/Button3";
+import Button3 from "../ui/button3/Button3";
 import { useState } from "react";
 
 export default function FireExtinguisherServices() {
@@ -12,53 +12,55 @@ export default function FireExtinguisherServices() {
 
     const fireFAQ = [
         {
+            id: "inspection",
             title: "FIRE EXTINGUISHER INSPECTIONS",
             body: <div>
-                <p>Regular inspections of your fire extinguishers is crutial to you and your business's safety. Get your
-                    facility's extinguishers inspected for their location, accessibility and funcitonality. Our liscenesed team will
+                <p>Regular inspections of your fire extinguishers are crucial to you and your business's safety. Get your
+                    facility's extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
                     make sure that your extinguishers are fully up to code and ready if you ever need them.
                 </p>
             </div>
         },
         {
+            id: "testing",
             title: "FIRE EXTINGUISHER TESTING",
             body: <div>
-                <p>Regular inspections of your fire extinguishers is crutial to you and your business's safety. Get your
-                    facility's extinguishers inspected for their location, accessibility and funcitonality. Our liscenesed team will
+                <p>Regular inspections of your fire extinguishers are crucial to you and your business's safety. Get your
+                    facility's extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
                     make sure that your extinguishers are fully up to code and ready if you ever need them.
                 </p>
             </div>
         },
         {
+            id: "recharge",
             title: "FIRE EXTINGUISHER RECHARGE",
             body: <div>
-                <p>Regular inspections of your fire extinguishers is crutial to you and your business's safety. Get your
-                    facility's extinguishers inspected for their location, accessibility and funcitonality. Our liscenesed team will
+                <p>Regular inspections of your fire extinguishers are crucial to you and your business's safety. Get your
+                    facility's extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
                     make sure that your extinguishers are fully up to code and ready if you ever need them.
                 </p>
             </div>
         },
         {
+            id: "training",
             title: "HANDS-ON TRAINING",
             body: <div>
-                <p>Regular inspections of your fire extinguishers is crutial to you and your business's safety. Get your
-                    facility's extinguishers inspected for their location, accessibility and funcitonality. Our liscenesed team will
+                <p>Regular inspections of your fire extinguishers are crucial to you and your business's safety. Get your
+                    facility's extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
                     make sure that your extinguishers are fully up to code and ready if you ever need them.
                 </p>
             </div>
         },
     ]
 
-    const handleCurrentIdx = (getCurrentIdx: number) => {
-        currentIdx === getCurrentIdx ? setCurrentIdx(null) : setCurrentIdx(getCurrentIdx)
-    }
+    const handleCurrentIdx = (getCurrentIdx: number) => setCurrentIdx(currentIdx === getCurrentIdx ? null : getCurrentIdx);
 
     return (
         <section className="text-sm md:text-base">
             <div className="mt-52 flex justify-center items-center">
                 <Image
                     loading="eager"
-                    src={extinguisher}
+                    src={extinguishImage}
                     className="pointer-events-none -z-10 h-screen fixed object-cover"
                     width={1920}
                     height={1080}
@@ -80,31 +82,27 @@ export default function FireExtinguisherServices() {
                             business environment, we offer a comprehensive range of extinguishing solutions designed to safeguard
                             your personnel, property, and operations.</p>
                     </article>
-                    <Button name="REQUEST QUOTE" to="/contact" />
+                    <Button3 name="REQUEST QUOTE" to="/contact" />
                 </div>
                 <div className="pt-20 py-10 -mt-10 md:px-14 px-5 flex gap-5 flex-col bg-neutral-100">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl">WHAT WE PROVIDE</h2>
                     <article className="flex flex-col gap-5">
                         <p>At Elite Brothers Fire we provide any type of fire extinguisher to fit your needs, proper fire extinguisher
-                            placement, regular fire extinguisher inspections and fire extinguisher installations.
+                            placement, regular fire extinguisher inspections, and fire extinguisher installations.
                             We consider everything from your building size and layout to placement regulations while following
                             local safety and building codes. When you work with us you know you are getting quality service from a
-                            local familiy owen business that is fully liscensed.</p>
+                            local family-owned business that is fully licensed.</p>
                     </article>
                     <div>
-                        {
-                            fireFAQ.map((item, idx) => {
-                                return <div key={idx} className="bg-EliteRed border-b-2 border-EliteRed2 flex flex-col gap-5 first-of-type:rounded-t-md last-of-type:rounded-b-md p-10 text-white" onClick={() => handleCurrentIdx(idx)}>
-                                    <div className="flex justify-between items-end">
-                                        <span className="text-lg font-bold">{item.title}</span>
-                                        {
-                                            currentIdx === idx ? <BsChevronUp /> : <BsChevronDown />
-                                        }
-                                    </div>
-                                    <span className={currentIdx === idx ? "block" : "hidden"}>{item.body}</span>
+                        {fireFAQ.map((item, idx) => (
+                            <div key={item.id} className="bg-EliteRed border-b-2 border-EliteRed2 flex flex-col gap-5 first-of-type:rounded-t-md last-of-type:rounded-b-md p-10 text-white" onClick={() => handleCurrentIdx(idx)}>
+                                <div className="flex justify-between items-center">
+                                    <h3>{item.title}</h3>
+                                    {currentIdx === idx ? <BsChevronUp /> : <BsChevronDown />}
                                 </div>
-                            })
-                        }
+                                <span className={`${currentIdx === idx ? "block" : "hidden"}`}>{item.body}</span>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
