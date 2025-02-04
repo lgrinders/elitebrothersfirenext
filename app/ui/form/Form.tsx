@@ -12,7 +12,7 @@ const Form = () => {
     const [status, setStatus] = useState("");
     const [err, setErr] = useState("");
 
-    const handleSubmit = async (e: any) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         const formData = {
@@ -40,11 +40,11 @@ const Form = () => {
             if (response.ok) {
                 setStatus("done");
             } else {
-                console.error("Error submitting form");
+                console.error(err);
                 setErr("Error Submitting Form");
             }
         } catch (error) {
-            console.error("Error submitting form", error);
+            console.error(err, error);
             setErr("Error Submitting Form");
         }
     }
