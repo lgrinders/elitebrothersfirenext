@@ -8,7 +8,7 @@ import Button from "../ui/button3/Button3";
 import { useState } from "react";
 
 export default function FireExtinguisherServices() {
-    const [currentIdx, setCurrentIdx] = useState(0);
+    const [currentIdx, setCurrentIdx] = useState<number | null>(null);
 
     const fireFAQ = [
         {
@@ -119,55 +119,9 @@ export default function FireExtinguisherServices() {
 
 
 
-            {/* <div className="w-full flex flex-col justify-center items-center relative">
-                <div className="lg:mx-14 mx-5 -top-64 px-5 lg:px-14 justify-center absolute md:px-14 py-10 flex gap-5 flex-col rounded-md bg-white">
-                    <h1 className="text-5xl">FIRE EXTINGUISHERS</h1>
-                    <article className="flex flex-col gap-5">
-                        <p>Fire extinguishers are a critical first line of defense against
-                            small fires, enabling safe evacuation and mitigating potential damage. However,
-                            not all fires are the same—there are five distinct classifications, some requiring
-                            a specific extinguishing agent for effective suppression. Our certified fire extinguisher
-                            specialists will assess your facility and provide tailored recommendations to ensure optimal
-                            fire protection.</p>
-                        <p>Whether you operate a commercial kitchen, an industrial facility, or any other
-                            business environment, we offer a comprehensive range of extinguishing solutions designed to safeguard
-                            your personnel, property, and operations.</p>
-                    </article>
-                    <Button name="REQUEST QUOTE" to="/contact" />
-                </div>
 
 
-
-                <div className="w-full py-10 pt-52 md:pt-48 lg:pt-40 xl:pt-32 md:px-14 px-5 flex gap-5 flex-col bg-neutral-100">
-                    <h2 className="text-5xl">WHAT WE PROVIDE</h2>
-                    <article className="flex flex-col gap-5">
-                        <p>At Elite Brothers Fire we provide any type of fire extinguisher to fit your needs, proper fire extinguisher
-                            placement, regular fire extinguisher inspections and fire extinguisher installations.
-                            We consider everything from your building size and layout to placement regulations while following
-                            local safety and building codes. When you work with us you know you are getting quality service from a
-                            local familiy owen business that is fully liscensed.</p>
-                    </article>
-                    <div className="w-full bg-white">
-                        {
-                            fireFAQ.map((item, idx) => {
-                                return <div key={idx} className="bg-EliteRed border-b-2 border-EliteRed2 flex flex-col gap-5 first-of-type:rounded-t-md last-of-type:rounded-b-md p-10 text-white" onClick={() => handleCurrentIdx(idx)}>
-                                    <div className="flex justify-between items-end">
-                                        <span className="text-lg font-bold">{item.title}</span>
-                                        {
-                                            currentIdx === idx ? <BsChevronUp /> : <BsChevronDown />
-                                        }
-                                    </div>
-                                    <span className={currentIdx === idx ? "block" : "hidden"}>{item.body}</span>
-                                </div>
-                            })
-                        }
-                    </div>
-                </div>
-
-
-            </div> */}
-
-            {/* <div className="relative py-10 bg-neutral-100 z-10 px-5 md:px-14 flex items-center justify-center">
+            <div className="relative pb-10 bg-neutral-100 z-10 px-5 md:px-14 flex items-center justify-center">
                 <div className="flex flex-col lg:flex-row gap-10 w-full bg-gradient-to-t from-neutral-200 to-white p-5 rounded-md shadow-xl">
                     <div className="lg:w-1/2 flex flex-col gap-5">
                         <div className="flex flex-col gap-10 w-full">
@@ -239,7 +193,7 @@ export default function FireExtinguisherServices() {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </section>
     );
 }
