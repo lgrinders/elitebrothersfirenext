@@ -66,12 +66,7 @@ export default function FireExtinguisherServices() {
                     placeholder="blur"
                 />
             </div>
-
-
             <div className="flex flex-col">
-
-
-
                 <div className="px-5 z-10 lg:px-14 mx-5 lg:mx-14 md:px-14 py-10 rounded-md bg-white flex flex-col gap-5">
                     <h1 className="text-3xl md:text-4xl lg:text-5xl">FIRE EXTINGUISHERS</h1>
                     <article className="flex flex-col gap-5">
@@ -87,9 +82,6 @@ export default function FireExtinguisherServices() {
                     </article>
                     <Button name="REQUEST QUOTE" to="/contact" />
                 </div>
-
-
-
                 <div className="pt-20 py-10 -mt-10 md:px-14 px-5 flex gap-5 flex-col bg-neutral-100">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl">WHAT WE PROVIDE</h2>
                     <article className="flex flex-col gap-5">
@@ -116,11 +108,6 @@ export default function FireExtinguisherServices() {
                     </div>
                 </div>
             </div>
-
-
-
-
-
             <div className="relative pb-10 bg-neutral-100 z-10 px-5 md:px-14 flex items-center justify-center">
                 <div className="flex flex-col lg:flex-row gap-10 w-full bg-gradient-to-t from-neutral-200 to-white p-5 rounded-md shadow-xl">
                     <div className="lg:w-1/2 flex flex-col gap-5">
