@@ -46,6 +46,7 @@ export default function Carousel() {
               alt={imageItem.alt}
               placeholder="blur"
               width={1500}
+              quality={100}
               loading={imageItem.id === 0 ? "eager" : "lazy"}
             />
 

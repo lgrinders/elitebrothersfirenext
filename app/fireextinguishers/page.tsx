@@ -15,8 +15,8 @@ export default function FireExtinguishers() {
             id: "inspection",
             title: "FIRE EXTINGUISHER INSPECTIONS",
             body: <div>
-                <p>Regular inspections of your fire extinguishers are crucial to you and your business's safety. Get your
-                    facility's extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
+                <p>Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your
+                    facilitys extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
                     make sure that your extinguishers are fully up to code and ready if you ever need them.
                 </p>
             </div>
@@ -25,8 +25,8 @@ export default function FireExtinguishers() {
             id: "testing",
             title: "FIRE EXTINGUISHER TESTING",
             body: <div>
-                <p>Regular inspections of your fire extinguishers are crucial to you and your business's safety. Get your
-                    facility's extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
+                <p>Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your
+                    facilitys extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
                     make sure that your extinguishers are fully up to code and ready if you ever need them.
                 </p>
             </div>
@@ -35,8 +35,8 @@ export default function FireExtinguishers() {
             id: "recharge",
             title: "FIRE EXTINGUISHER RECHARGE",
             body: <div>
-                <p>Regular inspections of your fire extinguishers are crucial to you and your business's safety. Get your
-                    facility's extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
+                <p>Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your
+                    facilitys extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
                     make sure that your extinguishers are fully up to code and ready if you ever need them.
                 </p>
             </div>
@@ -45,8 +45,8 @@ export default function FireExtinguishers() {
             id: "training",
             title: "HANDS-ON TRAINING",
             body: <div>
-                <p>Regular inspections of your fire extinguishers are crucial to you and your business's safety. Get your
-                    facility's extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
+                <p>Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your
+                    facilitys extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
                     make sure that your extinguishers are fully up to code and ready if you ever need them.
                 </p>
             </div>
