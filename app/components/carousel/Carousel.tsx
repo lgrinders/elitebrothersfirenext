@@ -41,13 +41,12 @@ export default function Carousel() {
             <span className="absolute h-full w-full bg-gradient-to-t from-black to-black/40"></span>
 
             <Image
-              loading="eager"
               src={imageItem.image}
-              className="pointer-events-none h-full w-full object-cover"
-              width={1920}
-              height={650}
+              className="pointer-events-none w-full h-full lg:h-auto object-cover"
               alt={imageItem.alt}
               placeholder="blur"
+              width={960}
+              loading={imageItem.id === 0 ? "eager" : "lazy"}
             />
 
             <div className="absolute flex w-full flex-col items-center justify-center gap-5 text-center text-white motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-duration-[1.50s] xl:gap-5">

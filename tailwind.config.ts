@@ -9,8 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Inter: "Inter",
-        Roboto: "Roboto",
+        Inter: ["var(--font-Inter)"],
       },
       colors: {
         EliteOrange: "#f89f21",

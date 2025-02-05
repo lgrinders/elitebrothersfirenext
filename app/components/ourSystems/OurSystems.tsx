@@ -1,6 +1,35 @@
 import Image from "next/image";
-import { ourSystemsData } from "../../assets/data";
 import Button2 from "../../ui/button2/Button2";
+import fireextinguisher from "../../../public/fireextinguisher.jpg";
+import kitchen from "../../../public/kitchen.jpg";
+import exitsign from "../../../public/exitsign.jpg";
+
+export const ourSystemsData = [
+  {
+    id: 0,
+    title: "Fire Extinguishers",
+    image: fireextinguisher,
+    path: "/fire-extinguisher-services",
+    paragraph:
+      "At Elite Brothers Fire & Safety, we offer a comprehensive range of fire extinguisher services, including sales, maintenance, and inspections.",
+  },
+  {
+    id: 1,
+    title: "Kitchen Fire Suppression",
+    image: kitchen,
+    path: "/fire-suppression-services",
+    paragraph:
+      "We specialize in the installation, maintenance, and repair of various fire suppression systems, ensuring they are tailored to your specific environment and needs.",
+  },
+  {
+    id: 2,
+    title: "Emergency Lighting",
+    image: exitsign,
+    path: "/emergency-lighting-services",
+    paragraph:
+      "At Elite Brothers Fire & Safety, we provide comprehensive services for the installation, maintenance, and inspection of exit and emergency lighting systems.",
+  },
+];
 
 const OurSystems = () => {
   return (
@@ -30,12 +59,12 @@ const OurSystems = () => {
           return (
             <article className="relative flex h-[500px]" key={dataItem.id}>
               <Image
-                loading="eager"
                 src={dataItem.image}
                 className="pointer-events-none h-full w-full object-cover"
                 alt={dataItem.title}
-                width={600}
-                height={600}
+                placeholder="blur"
+                width={550}
+                loading="lazy"
               />
 
               <div className="absolute flex h-full w-full flex-col justify-end gap-5 overflow-hidden bg-black/60 px-5 duration-200 hover:bg-black/70">

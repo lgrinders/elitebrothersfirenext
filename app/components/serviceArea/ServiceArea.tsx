@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button3 from "../../ui/button3/Button3";
+import farmland from "../../../public/farmland.jpg";
 
 const ServiceArea = () => {
   return (
@@ -27,12 +28,11 @@ const ServiceArea = () => {
       </div>
 
       <Image
-        loading="lazy"
-        src="/farmland.jpg"
+        src={farmland}
         className="pointer-events-none h-full w-full object-cover"
         alt="A Nashville mural"
-        width={1920}
-        height={800}
+        width={960}
+        loading="lazy"
       />
     </section>
   );

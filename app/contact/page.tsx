@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import contact from "../../public/contact.jpg";
+import contact from "../../public/contact.jpg"
 import Form from "../ui/form/Form";
 import { BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
 

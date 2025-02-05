@@ -347,33 +347,6 @@ export const navigationData = [
   { id: 3, label: "Contact", path: "/contact" },
 ];
 
-export const ourSystemsData = [
-  {
-    id: 0,
-    title: "Fire Extinguishers",
-    image: "/fireextinguisher.jpg",
-    path: "/fire-extinguisher-services",
-    paragraph:
-      "At Elite Brothers Fire & Safety, we offer a comprehensive range of fire extinguisher services, including sales, maintenance, and inspections.",
-  },
-  {
-    id: 1,
-    title: "Kitchen Fire Suppression",
-    image: "/kitchen.jpg",
-    path: "/fire-suppression-services",
-    paragraph:
-      "We specialize in the installation, maintenance, and repair of various fire suppression systems, ensuring they are tailored to your specific environment and needs.",
-  },
-  {
-    id: 2,
-    title: "Emergency Lighting",
-    image: "/exitsign.jpg",
-    path: "/emergency-lighting-services",
-    paragraph:
-      "At Elite Brothers Fire & Safety, we provide comprehensive services for the installation, maintenance, and inspection of exit and emergency lighting systems.",
-  },
-];
-
 export const serviceAreaData = [
   "Clarksville, TN",
   "Columbia, TN",
