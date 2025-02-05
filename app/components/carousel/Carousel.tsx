@@ -45,7 +45,7 @@ export default function Carousel() {
               className="pointer-events-none w-full h-full lg:h-auto object-cover"
               alt={imageItem.alt}
               placeholder="blur"
-              width={960}
+              width={1500}
               loading={imageItem.id === 0 ? "eager" : "lazy"}
             />
 
