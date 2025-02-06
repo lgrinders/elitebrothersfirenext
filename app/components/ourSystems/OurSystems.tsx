@@ -62,9 +62,10 @@ const OurSystems = () => {
               <Image
                 src={dataItem.image}
                 className="pointer-events-none object-cover"
-                alt={dataItem.title}
+                alt=""
                 fill
                 loading="lazy"
+                sizes="(max-width: 1020px) 100vw, (max-width: 1200px) 33vw, 40vw"
               />
 
               <div className="absolute flex flex-col items-center gap-5 px-5">

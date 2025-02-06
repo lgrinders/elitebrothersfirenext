@@ -41,8 +41,12 @@ export default function Carousel() {
             <Image
               src={imageItem.image}
               className="object-cover pointer-events-none"
-              alt={imageItem.alt}
+              alt=""
               fill
+              quality={100}
+              priority
+              placeholder="blur"
+              sizes="100vw"
             />
 
             <div className="absolute flex w-full h-full flex-col items-center justify-center gap-5 text-center motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-duration-[1.50s] xl:gap-5">
