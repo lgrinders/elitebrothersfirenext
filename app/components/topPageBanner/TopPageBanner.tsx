@@ -2,13 +2,12 @@ import { topofPageHeaderData } from "../../assets/data";
 
 const TopPageBanner = () => {
   return (
-    <section className="md:text-md hidden h-10 items-center gap-5 bg-EliteRed px-5 text-sm sm:flex">
+    <section className="md:text-md hidden py-1 gap-5 bg-EliteRed px-5 text-sm sm:flex">
       {topofPageHeaderData.map((dataItem, index) => (
         <div
           key={index}
-          className={`${
-            dataItem.title === "Email:" ? dataItem.class : ""
-          } flex items-center gap-2 font-bold text-white`}
+          className={`${dataItem.title === "Email:" ? dataItem.class : ""
+            } flex items-center gap-2 font-bold text-white`}
         >
           <span>{dataItem.icon}</span>
           <span>{dataItem.title}</span>

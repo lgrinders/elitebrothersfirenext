@@ -31,35 +31,29 @@ export default function Carousel() {
   ];
 
   return (
-    <div className="embla h-[550px] xl:h-[650px]" ref={emblaRef}>
-      <div className="embla__container h-full">
+    <div className="overflow-hidden text-white" ref={emblaRef}>
+      <div className="flex">
         {imageData.map((imageItem) => (
           <div
             key={`${imageItem.id}`}
-            className="embla__slide flex items-center justify-center"
+            className="embla__slide relative h-[550px] xl:h-[650px]"
           >
-            <span className="absolute h-full w-full bg-gradient-to-t from-black to-black/40"></span>
-
             <Image
               src={imageItem.image}
-              className="pointer-events-none w-full h-full lg:h-auto object-cover"
+              className="object-cover pointer-events-none"
               alt={imageItem.alt}
-              placeholder="blur"
-              width={1500}
-              quality={100}
-              loading={imageItem.id === 0 ? "eager" : "lazy"}
+              fill
             />
 
-            <div className="absolute flex w-full flex-col items-center justify-center gap-5 text-center text-white motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-duration-[1.50s] xl:gap-5">
-              <h1 className="flex items-center justify-center text-4xl font-semibold md:text-5xl lg:text-6xl xl:text-7xl">
+            <div className="absolute flex w-full h-full flex-col items-center justify-center gap-5 text-center motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-duration-[1.50s] xl:gap-5">
+              <h1 className="text-4xl font-semibold md:text-5xl lg:text-6xl xl:text-7xl">
                 {imageItem.title}
               </h1>
-
-              <div className="justify- flex flex-col items-center">
-                <h2 className="flex items-center justify-center text-lg md:text-xl lg:text-3xl xl:text-4xl">
+              <div>
+                <h2 className="text-lg md:text-xl lg:text-3xl xl:text-4xl">
                   {imageItem.subTitle}
                 </h2>
-                <p className="flex w-[350px] items-center justify-center px-5 text-center text-sm font-normal sm:w-[400px] lg:w-[600px] lg:text-lg xl:w-[650px] xl:text-xl">
+                <p className="w-[350px] text-center text-sm sm:w-[400px] lg:w-[600px] lg:text-lg xl:w-[650px] xl:text-xl">
                   {imageItem.body}
                 </p>
               </div>
@@ -71,3 +65,5 @@ export default function Carousel() {
     </div>
   );
 }
+
+

@@ -95,7 +95,7 @@ export default function FireExtinguishers() {
                     </article>
                     <div>
                         {fireFAQ.map((item, idx) => (
-                            <div key={item.id} className="bg-EliteRed border-b-2 border-EliteRed2 flex flex-col gap-5 first-of-type:rounded-t-md last-of-type:rounded-b-md p-10 text-white" onClick={() => handleCurrentIdx(idx)}>
+                            <div key={item.id} className="bg-white flex flex-col gap-5 first-of-type:rounded-t-md last-of-type:rounded-b-md p-10" onClick={() => handleCurrentIdx(idx)}>
                                 <div className="flex justify-between items-center">
                                     <h3>{item.title}</h3>
                                     {currentIdx === idx ? <BsChevronUp /> : <BsChevronDown />}
