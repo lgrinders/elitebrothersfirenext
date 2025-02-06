@@ -44,12 +44,12 @@ export default function Carousel() {
               alt=""
               fill
               quality={100}
-              priority
+              priority={true}
               placeholder="blur"
               sizes="100vw"
             />
 
-            <div className="absolute flex w-full h-full flex-col items-center justify-center gap-5 text-center motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-duration-[1.50s] xl:gap-5">
+            <div className="z-10 absolute flex w-full h-full flex-col items-center justify-center gap-5 text-center motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-duration-[1.50s] xl:gap-5">
               <h1 className="text-4xl font-semibold md:text-5xl lg:text-6xl xl:text-7xl">
                 {imageItem.title}
               </h1>
