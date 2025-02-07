@@ -28,7 +28,7 @@ const Contact = () => (
         <div className="py-10 bg-neutral-100 px-5 md:px-14 mt-[300px]">
             <div className="flex flex-col lg:flex-row gap-10 bg-gradient-to-t from-neutral-200 to-white p-5 rounded-md shadow-xl">
                 <div className="flex flex-col gap-5">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl">WE'RE READY TO HELP</h2>
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl">WE&apos;RE READY TO HELP</h2>
                     <span className="text-lg text-neutral-600">
                         Contact us today and connect with a member of our team! Fill out the form below, call, text or email us!
                     </span>
