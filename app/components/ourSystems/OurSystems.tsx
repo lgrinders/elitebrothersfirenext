@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button2 from "../../ui/button2/Button2";
-import fireextinguisher from "../../../public/fireextinguisher.jpg";
+import fireextinguishing from "../../../public/extinguishing.jpg";
 import kitchen from "../../../public/kitchen.jpg";
 import exitsign from "../../../public/exitsign.jpg";
 
@@ -8,7 +8,7 @@ export const ourSystemsData = [
   {
     id: 0,
     title: "Fire Extinguishers",
-    image: fireextinguisher,
+    image: fireextinguishing,
     path: "/fire-extinguisher-services",
     paragraph:
       "At Elite Brothers Fire & Safety, we offer a comprehensive range of fire extinguisher services, including sales, maintenance, and inspections.",
@@ -61,7 +61,7 @@ const OurSystems = () => {
             <div className="relative flex justify-center items-center h-[500px]" key={dataItem.id}>
               <Image
                 src={dataItem.image}
-                className="pointer-events-none object-cover"
+                className="pointer-events-none object-cover object-top"
                 alt=""
                 fill
                 loading="lazy"
