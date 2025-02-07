@@ -17,7 +17,7 @@ export default function FireExtinguishers() {
 
     const fireFAQ = [
         {
-            title: <h3 className="font-semibold text-xl">FIRE EXTINGUISHER INSPECTIONS</h3>,
+            title: <h3 className="font-bold text-xl">FIRE EXTINGUISHER INSPECTIONS</h3>,
             body:
                 <div className="gap-5 flex flex-col">
                     <p>Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your
@@ -38,7 +38,7 @@ export default function FireExtinguishers() {
 
         },
         {
-            title: <h3 className="font-semibold text-xl">FIRE EXTINGUISHER TESTING</h3>,
+            title: <h3 className="font-bold text-xl">FIRE EXTINGUISHER TESTING</h3>,
             body:
                 <div className="gap-5 flex flex-col">
                     <p>Testing of your current fire extinguishers is important when maintaining a safe facility. When you reach for a fire extinguisher in an emergency you want to be certain that the extinguisher in your hand is going to work. Elite Brothers Fire has got your need covered.
@@ -54,12 +54,12 @@ export default function FireExtinguishers() {
             image: fireextinguishertesting,
         },
         {
-            title: <h3 className="font-semibold text-xl">BUILDING CONSIDERATIONS</h3>,
+            title: <h3 className="font-bold text-xl">BUILDING CONSIDERATIONS</h3>,
             body:
                 <div className="gap-5 flex flex-col">
                     <p>At Elite Brothers Fire & Safety, well sell and service a range of fire extinguishers to meet the needs of any property.
                     </p>
-                    <h4 className="text-xl font-semibold">We Consider</h4>
+                    <h4 className="text-xl font-bold">We Consider</h4>
                     <ul className="list-disc list-inside flex flex-col gap-1">
                         <li>Building size and layout</li>
                         <li>Type of business</li>
@@ -71,7 +71,7 @@ export default function FireExtinguishers() {
             image: buildingblueprint,
         },
         {
-            title: <h3 className="font-semibold text-xl">FIRE EXTINGUISHER INSTALLATIONS</h3>,
+            title: <h3 className="font-bold text-xl">FIRE EXTINGUISHER INSTALLATIONS</h3>,
             body:
                 <div className="gap-5 flex flex-col">
                     <p>No matter the building, types of extinguishers needed or the amount, Elite Brothers Fire has you covered. Reach out to us today and we can give you a quote today.
@@ -111,7 +111,7 @@ export default function FireExtinguishers() {
             <div className="flex flex-col mt-[200px]">
 
 
-                <div className="px-5 z-10 lg:px-14 mx-5 lg:mx-14 md:px-14 py-10 rounded-md bg-white flex flex-col gap-5">
+                <div className="px-5 z-10 lg:px-14 mx-5 lg:mx-32 md:px-14 py-10 rounded-md bg-white flex flex-col gap-5">
                     <h1 className="text-3xl md:text-4xl lg:text-5xl">FIRE EXTINGUISHERS</h1>
                     <article className="flex flex-col gap-5">
                         <p className="">Fire extinguishers are a critical first line of defense against
@@ -143,7 +143,7 @@ export default function FireExtinguishers() {
 
                     <div>
                         {fireFAQ.map((item, idx) => (
-                            <div key={idx} className="bg-white md:flex flex-col border-b-2 last-of-type:shadow-2xl border-neutral-100 gap-5 first-of-type:rounded-t-md last-of-type:rounded-b-md p-5 md:p-14" onClick={() => handleCurrentIdx(idx)}>
+                            <div key={idx} className="bg-white hover:bg-neutral-200 duration-200 md:flex flex-col border-b-2 last-of-type:shadow-xl border-neutral-100 gap-5 first-of-type:rounded-t-md last-of-type:rounded-b-md p-5 md:p-14" onClick={() => handleCurrentIdx(idx)}>
                                 <div className="flex justify-between items-center">
                                     {item.title}
                                     {currentIdx === idx ? <BsChevronUp /> : <BsChevronDown />}
