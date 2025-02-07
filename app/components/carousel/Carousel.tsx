@@ -1,7 +1,7 @@
 "use client";
 
 import useEmblaCarousel from "embla-carousel-react";
-import extinguisherImage from "../../../public/extinguish.jpg";
+import extinguisherImage from "../../../public/extinguisher.jpg";
 import NashvilleImage from "../../../public/Nashville.jpg";
 import Button3 from "../../ui/button3/Button3";
 import Image from "next/image";
@@ -43,10 +43,10 @@ export default function Carousel() {
               className="object-cover pointer-events-none"
               alt=""
               fill
-              quality={100}
               priority={true}
               placeholder="blur"
               sizes="100vw"
+              quality={100}
             />
 
             <div className="z-10 absolute flex w-full h-full flex-col items-center justify-center gap-5 text-center motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-duration-[1.50s] xl:gap-5">

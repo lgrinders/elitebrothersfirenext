@@ -1,55 +1,90 @@
 "use client";
 
 import Image from "next/image";
-import extinguishImage from "../../public/extinguish.jpg";
+import extinguisher2 from "../../public/extinguisher2.jpg";
+import fireextinguishertesting from "../../public/fireextinguishertesting.jpg"
+import buildingblueprint from "../../public/buildingblueprint.jpg"
+import fireextinguisherinstall from "../../public/fireextinguisherinstall.jpg"
 import Form from "../ui/form/Form";
 import { BsChevronDown, BsChevronUp, BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
 import Button3 from "../ui/button3/Button3";
 import { useState } from "react";
+import extinguishImage from "../../public/extinguishing.jpg"
+import Link from "next/link";
 
 export default function FireExtinguishers() {
-    const [currentIdx, setCurrentIdx] = useState<number | null>(null);
+    const [currentIdx, setCurrentIdx] = useState<number | null>(0);
 
     const fireFAQ = [
         {
-            id: "inspection",
-            title: "FIRE EXTINGUISHER INSPECTIONS",
-            body: <div>
-                <p>Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your
-                    facilitys extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
-                    make sure that your extinguishers are fully up to code and ready if you ever need them.
-                </p>
-            </div>
+            title: <h3 className="font-semibold text-xl">FIRE EXTINGUISHER INSPECTIONS</h3>,
+            body:
+                <div className="gap-5 flex flex-col">
+                    <p>Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your
+                        facilitys extinguishers inspected for their location, accessibility, and functionality.
+                        Our licensed team will make sure that your extinguishers
+                        are fully up to code and ready if you ever need them.
+                    </p>
+                    <h4 className="text-xl font-semibold">We Provide</h4>
+                    <ul className="list-disc list-inside flex flex-col gap-1">
+                        <li>The right type of extinguisher</li>
+                        <li>Correct extinguisher placement</li>
+                        <li>Regualar fire extinguisher inspections</li>
+                        <li>New extinguisher installations</li>
+                    </ul>
+                    <p>With our help you can be prepared for a fire. We renew our fire extinguisher license annally to ensure that we are up to date. <Link href={"/contact"} className="underline text-EliteRed">Get in touch </Link>with us now for a same-day appointment or same-day service!</p>
+                </div>,
+            image: extinguisher2,
+
         },
         {
-            id: "testing",
-            title: "FIRE EXTINGUISHER TESTING",
-            body: <div>
-                <p>Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your
-                    facilitys extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
-                    make sure that your extinguishers are fully up to code and ready if you ever need them.
-                </p>
-            </div>
+            title: <h3 className="font-semibold text-xl">FIRE EXTINGUISHER TESTING</h3>,
+            body:
+                <div className="gap-5 flex flex-col">
+                    <p>Testing of your current fire extinguishers is important when maintaining a safe facility. When you reach for a fire extinguisher in an emergency you want to be certain that the extinguisher in your hand is going to work. Elite Brothers Fire has got your need covered.
+                    </p>
+                    <h4 className="text-xl font-semibold">We Provide</h4>
+                    <ul className="list-disc list-inside flex flex-col gap-1">
+                        <li>Testing of your current extinguishers</li>
+                        <li>Replacement or refills of extinguishers</li>
+                        <li>Certified inspections</li>
+                    </ul>
+                    <p>With our help you can be prepared for a fire. We renew our fire extinguisher license annally to ensure that we are up to date. <Link href={"/contact"} className="underline text-EliteRed">Get in touch </Link>with us now for a same-day appointment or same-day service!</p>
+                </div>,
+            image: fireextinguishertesting,
         },
         {
-            id: "recharge",
-            title: "FIRE EXTINGUISHER RECHARGE",
-            body: <div>
-                <p>Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your
-                    facilitys extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
-                    make sure that your extinguishers are fully up to code and ready if you ever need them.
-                </p>
-            </div>
+            title: <h3 className="font-semibold text-xl">BUILDING CONSIDERATIONS</h3>,
+            body:
+                <div className="gap-5 flex flex-col">
+                    <p>At Elite Brothers Fire & Safety, well sell and service a range of fire extinguishers to meet the needs of any property.
+                    </p>
+                    <h4 className="text-xl font-semibold">We Consider</h4>
+                    <ul className="list-disc list-inside flex flex-col gap-1">
+                        <li>Building size and layout</li>
+                        <li>Type of business</li>
+                        <li>Local safety and building codes</li>
+                        <li>Placement regualtions</li>
+                    </ul>
+                    <p>With our help you can be prepared for a fire. We renew our fire extinguisher license annally to ensure that we are up to date. <Link href={"/contact"} className="underline text-EliteRed">Get in touch </Link>with us now for a same-day appointment or same-day service!</p>
+                </div>,
+            image: buildingblueprint,
         },
         {
-            id: "training",
-            title: "HANDS-ON TRAINING",
-            body: <div>
-                <p>Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your
-                    facilitys extinguishers inspected for their location, accessibility, and functionality. Our licensed team will
-                    make sure that your extinguishers are fully up to code and ready if you ever need them.
-                </p>
-            </div>
+            title: <h3 className="font-semibold text-xl">FIRE EXTINGUISHER INSTALLATIONS</h3>,
+            body:
+                <div className="gap-5 flex flex-col">
+                    <p>No matter the building, types of extinguishers needed or the amount, Elite Brothers Fire has you covered. Reach out to us today and we can give you a quote today.
+                    </p>
+                    <h4 className="text-xl font-semibold">We Provide</h4>
+                    <ul className="list-disc list-inside flex flex-col gap-1">
+                        <li>Certified fire extinguisher installations</li>
+                        <li>Proper extinguisher placement</li>
+                        <li>The right extinguishers for your case</li>
+                    </ul>
+                    <p>With our help you can be prepared for a fire. We renew our fire extinguisher license annally to ensure that we are up to date. <Link href={"/contact"} className="underline text-EliteRed">Get in touch </Link>with us now for a same-day appointment or same-day service!</p>
+                </div>,
+            image: fireextinguisherinstall,
         },
     ]
 
@@ -57,18 +92,25 @@ export default function FireExtinguishers() {
 
     return (
         <section className="text-sm md:text-base">
-            <div className="mt-52 flex justify-center items-center">
-                <Image
-                    loading="lazy"
-                    src={extinguishImage}
-                    className="pointer-events-none -z-20 w-full h-screen fixed object-cover"
-                    width={1500}
-                    alt="Man holding a fire extinguisher"
-                    placeholder="blur"
-                />
-                <span className="absolute h-full w-full bg-gradient-to-t from-black -z-10 to-black/40"></span>
+
+
+            <div className="fixed w-full top-0 mt-[80px] h-[1000px] -z-10">
+                <div className="flex justify-center relative h-full items-center">
+                    <Image
+                        priority={true}
+                        src={extinguishImage}
+                        className="object-cover"
+                        fill
+                        alt=""
+                        placeholder="blur"
+                        quality={100}
+                    />
+                </div>
             </div>
-            <div className="flex flex-col">
+
+            <div className="flex flex-col mt-[200px]">
+
+
                 <div className="px-5 z-10 lg:px-14 mx-5 lg:mx-14 md:px-14 py-10 rounded-md bg-white flex flex-col gap-5">
                     <h1 className="text-3xl md:text-4xl lg:text-5xl">FIRE EXTINGUISHERS</h1>
                     <article className="flex flex-col gap-5">
@@ -84,28 +126,49 @@ export default function FireExtinguishers() {
                     </article>
                     <Button3 name="REQUEST QUOTE" to="/contact" />
                 </div>
-                <div className="pt-20 py-10 -mt-10 md:px-14 px-5 flex gap-5 flex-col bg-neutral-100">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl">WHAT WE PROVIDE</h2>
+
+
+
+                <div className="pt-20 -mt-10 md:px-14 px-5 flex gap-5 flex-col bg-neutral-100 pb-10">
                     <article className="flex flex-col gap-5">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl">WHAT WE PROVIDE</h2>
                         <p>At Elite Brothers Fire we provide any type of fire extinguisher to fit your needs, proper fire extinguisher
                             placement, regular fire extinguisher inspections, and fire extinguisher installations.
                             We consider everything from your building size and layout to placement regulations while following
                             local safety and building codes. When you work with us you know you are getting quality service from a
                             local family-owned business that is fully licensed.</p>
                     </article>
+
+
+
                     <div>
                         {fireFAQ.map((item, idx) => (
-                            <div key={item.id} className="bg-white flex flex-col gap-5 first-of-type:rounded-t-md last-of-type:rounded-b-md p-10" onClick={() => handleCurrentIdx(idx)}>
+                            <div key={idx} className="bg-white md:flex flex-col border-b-2 last-of-type:shadow-2xl border-neutral-100 gap-5 first-of-type:rounded-t-md last-of-type:rounded-b-md p-5 md:p-14" onClick={() => handleCurrentIdx(idx)}>
                                 <div className="flex justify-between items-center">
-                                    <h3>{item.title}</h3>
+                                    {item.title}
                                     {currentIdx === idx ? <BsChevronUp /> : <BsChevronDown />}
                                 </div>
-                                <span className={`${currentIdx === idx ? "block" : "hidden"}`}>{item.body}</span>
+                                <div
+                                    className={`overflow-hidden transition-max-height duration-500 ease-in-out justify-between flex flex-col lg:flex-row gap-5 ${currentIdx === idx ? "max-h-screen" : "max-h-0"}`}
+                                >
+                                    {item.body}
+
+                                    <div className="flex justify-center md:justify-end">
+                                        <div className="h-96 w-full lg:h-96 lg:w-96 relative">
+                                            <Image src={item.image} fill className="object-cover rounded-md" alt="" sizes="100vh" />
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
+
+
+
+
             <div className="relative pb-10 bg-neutral-100 z-10 px-5 md:px-14 flex items-center justify-center">
                 <div className="flex flex-col lg:flex-row gap-10 w-full bg-gradient-to-t from-neutral-200 to-white p-5 rounded-md shadow-xl">
                     <div className="lg:w-1/2 flex flex-col gap-5">
