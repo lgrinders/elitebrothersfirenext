@@ -12,10 +12,8 @@ import { useState } from "react";
 import extinguishImage from "../../public/extinguishing.jpg"
 import Link from "next/link";
 
-export default function FireExtinguishers() {
+export default function ExitEmergencyLighting() {
     const [currentIdx, setCurrentIdx] = useState<number | null>(0);
-
-    console.log(currentIdx)
 
     const fireFAQ = [
         {
