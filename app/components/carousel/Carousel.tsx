@@ -36,7 +36,7 @@ export default function Carousel() {
         {imageData.map((imageItem) => (
           <div
             key={`${imageItem.id}`}
-            className="embla__slide relative h-[550px] xl:h-[650px]"
+            className="embla__slide relative h-[550px] xl:h-[650px] select-none"
           >
             <Image
               src={imageItem.image}
@@ -61,7 +61,7 @@ export default function Carousel() {
                   {imageItem.body}
                 </p>
               </div>
-              <Button3 to="/quote" name="REQUEST QUOTE" />
+              <Button3 to="/contact" name="REQUEST QUOTE" />
             </div>
           </div>
         ))}

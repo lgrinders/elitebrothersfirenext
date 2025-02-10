@@ -1,15 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import extinguisher2 from "../../public/extinguisher2.jpg";
-import fireextinguishertesting from "../../public/fireextinguishertesting.jpg"
-import buildingblueprint from "../../public/buildingblueprint.jpg"
+import exitLight2 from "../../public/exitlight2.jpg";
+import lightMaintenance from "../../public/lightmaintenance.jpg";
+import bulb from "../../public/bulb.jpg"
 import fireextinguisherinstall from "../../public/fireextinguisherinstall.jpg"
 import Form from "../ui/form/Form";
 import { BsChevronDown, BsChevronUp, BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
 import Button3 from "../ui/button3/Button3";
 import { useState } from "react";
-import extinguishImage from "../../public/extinguishing.jpg"
+import exitSign from "../../public/exitsign.jpg";
 import Link from "next/link";
 
 export default function ExitEmergencyLighting() {
@@ -17,89 +17,51 @@ export default function ExitEmergencyLighting() {
 
     const fireFAQ = [
         {
-            title: <h3 className="font-bold text-xl">FIRE EXTINGUISHER INSPECTIONS</h3>,
-            body:
-                <div className="gap-5 flex flex-col">
-                    <p>Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your
-                        facilitys extinguishers inspected for their location, accessibility, and functionality.
-                        Our licensed team will make sure that your extinguishers
-                        are fully up to code and ready if you ever need them.
-                    </p>
-                    <h4 className="text-xl font-semibold">We Provide</h4>
-                    <ul className="list-disc list-inside flex flex-col gap-1">
-                        <li>The right type of extinguisher</li>
-                        <li>Correct extinguisher placement</li>
-                        <li>Regualar fire extinguisher inspections</li>
-                        <li>New extinguisher installations</li>
-                    </ul>
-                    <p>With our help you can be prepared for a fire. We renew our fire extinguisher license annally to ensure that we are up to date. <Link href={"/contact"} className="underline text-EliteRed">Get in touch </Link>with us now for a same-day appointment or same-day service!</p>
-                </div>,
-            image: extinguisher2,
+            title: "EXIT & EMERGENCY LIGHT INSTALLATION",
+            description: "At Elite Brothers Fire we guarantee to solve your exit and emergency lighting problems. Ensuring your bussiness meets safty standards is crutial and we have you covered.",
+            points: [
+                "Exit lightin installation",
+                "Emergency lighting installation",
+                "Correct lighting placement",
+                "Commercial lighting"
+            ],
+            image: exitLight2,
+        },
+        {
+            title: "LIGHTING MAINTENANCE",
+            description: "Having your lighting inspected is just as important as having it initially installed. Elite Brothers Fire will ensure that your exit & emergency lighting is performing as intended.",
+            points: [
+                "Commercial emergency lighting maintenance",
+                "Annual lighting inspection",
+                "Monthly emergency lighting maintenance"
+            ],
+            image: lightMaintenance,
+        },
+        {
+            title: "LIGHTING VERIFICATION",
+            description: "Elite Brothers Fire and safety experts will check and thoroughly test all of your lighting equiptment to make sure that it is up to safety standards.",
+            points: [
+                "Testing for the full 90 minute requirement",
+                "Checking of battery voltage, condition, and manufacturer date",
+                "Checking of lamps and bulbs",
+                "Verifying proper function of charging circuit",
+                "Application of lighting test label"
+            ],
+            image: bulb,
+        },
+    ];
 
-        },
-        {
-            title: <h3 className="font-bold text-xl">FIRE EXTINGUISHER TESTING</h3>,
-            body:
-                <div className="gap-5 flex flex-col">
-                    <p>Testing of your current fire extinguishers is important when maintaining a safe facility. When you reach for a fire extinguisher in an emergency you want to be certain that the extinguisher in your hand is going to work. Elite Brothers Fire has got your need covered.
-                    </p>
-                    <h4 className="text-xl font-semibold">We Provide</h4>
-                    <ul className="list-disc list-inside flex flex-col gap-1">
-                        <li>Testing of your current extinguishers</li>
-                        <li>Replacement or refills of extinguishers</li>
-                        <li>Certified inspections</li>
-                    </ul>
-                    <p>With our help you can be prepared for a fire. We renew our fire extinguisher license annally to ensure that we are up to date. <Link href={"/contact"} className="underline text-EliteRed">Get in touch </Link>with us now for a same-day appointment or same-day service!</p>
-                </div>,
-            image: fireextinguishertesting,
-        },
-        {
-            title: <h3 className="font-bold text-xl">BUILDING CONSIDERATIONS</h3>,
-            body:
-                <div className="gap-5 flex flex-col">
-                    <p>At Elite Brothers Fire & Safety, well sell and service a range of fire extinguishers to meet the needs of any property.
-                    </p>
-                    <h4 className="text-xl font-bold">We Consider</h4>
-                    <ul className="list-disc list-inside flex flex-col gap-1">
-                        <li>Building size and layout</li>
-                        <li>Type of business</li>
-                        <li>Local safety and building codes</li>
-                        <li>Placement regualtions</li>
-                    </ul>
-                    <p>With our help you can be prepared for a fire. We renew our fire extinguisher license annally to ensure that we are up to date. <Link href={"/contact"} className="underline text-EliteRed">Get in touch </Link>with us now for a same-day appointment or same-day service!</p>
-                </div>,
-            image: buildingblueprint,
-        },
-        {
-            title: <h3 className="font-bold text-xl">FIRE EXTINGUISHER INSTALLATIONS</h3>,
-            body:
-                <div className="gap-5 flex flex-col">
-                    <p>No matter the building, types of extinguishers needed or the amount, Elite Brothers Fire has you covered. Reach out to us today and we can give you a quote today.
-                    </p>
-                    <h4 className="text-xl font-semibold">We Provide</h4>
-                    <ul className="list-disc list-inside flex flex-col gap-1">
-                        <li>Certified fire extinguisher installations</li>
-                        <li>Proper extinguisher placement</li>
-                        <li>The right extinguishers for your case</li>
-                    </ul>
-                    <p>With our help you can be prepared for a fire. We renew our fire extinguisher license annally to ensure that we are up to date. <Link href={"/contact"} className="underline text-EliteRed">Get in touch </Link>with us now for a same-day appointment or same-day service!</p>
-                </div>,
-            image: fireextinguisherinstall,
-        },
-    ]
 
     const handleCurrentIdx = (getCurrentIdx: number) => setCurrentIdx(currentIdx === getCurrentIdx ? null : getCurrentIdx);
 
     return (
         <section className="text-sm md:text-base">
-
-
             <div className="fixed w-full top-0 mt-[80px] h-[1000px] -z-10">
                 <div className="flex justify-center relative h-full items-center">
                     <Image
                         priority={true}
-                        src={extinguishImage}
-                        className="object-cover"
+                        src={exitSign}
+                        className="object-cover object-top"
                         fill
                         alt=""
                         placeholder="blur"
@@ -112,17 +74,16 @@ export default function ExitEmergencyLighting() {
 
 
                 <div className="px-5 z-10 lg:px-14 mx-5 lg:mx-32 md:px-14 py-10 rounded-md bg-white flex flex-col gap-5">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl">FIRE EXTINGUISHERS</h1>
-                    <article className="flex flex-col gap-5">
-                        <p className="">Fire extinguishers are a critical first line of defense against
-                            small fires, enabling safe evacuation and mitigating potential damage. However,
-                            not all fires are the same—there are five distinct classifications, some requiring
-                            a specific extinguishing agent for effective suppression. Our certified fire extinguisher
-                            specialists will assess your facility and provide tailored recommendations to ensure optimal
-                            fire protection.</p>
-                        <p>Whether you operate a commercial kitchen, an industrial facility, or any other
-                            business environment, we offer a comprehensive range of extinguishing solutions designed to safeguard
-                            your personnel, property, and operations.</p>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl">EXIT & EMERGENCY LIGHTING</h1>
+                    <article className="flex flex-col gap-5 text-sm text-neutral-600 lg:text-lg">
+                        <p className="">Exit and emergency lighting is a vital component of building safety,
+                            providing clear guidance during power outages, fires, or other emergencies.
+                            Properly illuminated exit routes help ensure safe and efficient evacuation while
+                            reducing the risk of confusion or injury. However, not all buildings have the same
+                            requirements—factors such as layout, occupancy, and regulatory compliance
+                            play a key role in determining the best solutions. Our certified emergency lighting
+                            specialists will assess your facility and provide tailored recommendations to ensure reliable,
+                            code-compliant illumination for optimal safety.</p>
                     </article>
                     <Button3 name="REQUEST QUOTE" to="/contact" />
                 </div>
@@ -132,33 +93,39 @@ export default function ExitEmergencyLighting() {
                 <div className="pt-20 -mt-10 md:px-14 px-5 flex gap-5 flex-col bg-neutral-100 pb-10">
                     <article className="flex flex-col gap-5">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl">WHAT WE PROVIDE</h2>
-                        <p>At Elite Brothers Fire we provide any type of fire extinguisher to fit your needs, proper fire extinguisher
-                            placement, regular fire extinguisher inspections, and fire extinguisher installations.
+                        <p className="text-sm text-neutral-600 lg:text-lg">At Elite Brothers Fire we provide the exmergency and exit lighting services to fit your needs, proper lighting
+                            placement, lighting inspections, and installations.
                             We consider everything from your building size and layout to placement regulations while following
                             local safety and building codes. When you work with us you know you are getting quality service from a
                             local family-owned business that is fully licensed.</p>
                     </article>
 
-
-
                     <div>
                         {fireFAQ.map((item, idx) => (
-                            <div key={idx} className={`bg-white ${currentIdx === idx ? 'bg-neutral-200' : "bg-white"}  duration-500 md:flex flex-col border-b-2 last-of-type:shadow-xl border-neutral-100 gap-5 first-of-type:rounded-t-md last-of-type:rounded-b-md p-5 md:p-14`} onClick={() => handleCurrentIdx(idx)}>
-                                <div className="flex justify-between items-center">
-                                    {item.title}
-                                    {currentIdx === idx ? <BsChevronUp /> : <BsChevronDown />}
+                            <div
+                                key={idx}
+                                className={`${currentIdx === idx ? 'bg-white' : "bg-neutral-200"} hover:bg-white cursor-pointer duration-500 md:flex flex-col border-b-2 last-of-type:border-0 last-of-type:shadow-xl border-neutral-100 first-of-type:rounded-t-md last-of-type:rounded-b-md p-5 md:p-14`}
+                                onClick={() => handleCurrentIdx(idx)}
+                            >
+                                <div className="flex justify-between items-centers">
+                                    <h3 className="font-bold text-xl py-5">{item.title}</h3>
+                                    <span className="p-5">{currentIdx === idx ? <BsChevronUp /> : <BsChevronDown />}</span>
                                 </div>
-                                <div
-                                    className={`overflow-hidden transition-max-height duration-500 ease-in-out justify-between flex flex-col lg:flex-row gap-5 ${currentIdx === idx ? "max-h-screen" : "max-h-0"}`}
-                                >
-                                    {item.body}
 
+                                <div className={`overflow-hidden transition-max-height duration-500 ease-in-out justify-between flex flex-col lg:flex-row gap-5 ${currentIdx === idx ? "max-h-screen" : "max-h-0"}`}>
+                                    <div className="gap-5 flex flex-col text-sm text-neutral-600 lg:text-lg">
+                                        <p>{item.description}</p>
+                                        <h4 className="text-xl font-semibold">We Provide</h4>
+                                        <ul className="list-disc list-inside flex flex-col gap-1">
+                                            {item.points.map((point, i) => <li key={i}>{point}</li>)}
+                                        </ul>
+                                        <p>At Elite Brothers Fire & Safety, we ensure your business stays compliant with the latest safety standards. Is it time for your annual inspection?  <Link href="/contact" className="underline text-EliteRed">Get in touch</Link> with us now for a same-day appointment. We can conduct a full test of your lighting system!</p>
+                                    </div>
                                     <div className="flex justify-center md:justify-end">
                                         <div className="h-96 w-full lg:h-96 lg:w-96 relative">
                                             <Image src={item.image} fill className="object-cover rounded-md" alt="" sizes="100vh" />
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         ))}

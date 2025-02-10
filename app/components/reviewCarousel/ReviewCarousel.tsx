@@ -30,7 +30,7 @@ export default function ReviewCarousel() {
 
   return (
     <div className="bg-white py-10 gap-5 flex flex-col overflow-hidden px-10 lg:px-14">
-      <div className="flex justify-end">
+      <div className="flex justify-end text-end">
         <div className="flex flex-col gap-5">
           <div className="text-3xl md:text-4xl lg:text-5xl">WHAT CUSTOMERS ARE SAYING</div>
           <p className="gap-3 justify-end flex text-sm text-neutral-600 lg:text-lg">See what our customers are saying out us.</p>
