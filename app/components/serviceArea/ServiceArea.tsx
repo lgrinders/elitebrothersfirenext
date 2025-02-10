@@ -6,7 +6,7 @@ const ServiceArea = () => {
   return (
     <section className="relative flex items-center h-[550px] text-white xl:h-[650px]">
 
-      <div className="absolute z-10 flex flex-col items-center gap-10 lg:px-14 px-10 md:flex-row">
+      <div className="absolute z-10 flex flex-col items-start gap-10 lg:px-14 px-10 md:flex-row">
         <img
           src="/servicearea.svg"
           className="h-[120px] w-[500px] sm:h-[130px] sm:w-[500px] md:h-[110px] md:w-[400px] lg:h-[150px] lg:w-[500px] xl:h-[200px] xl:w-[900px]"
