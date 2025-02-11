@@ -3,8 +3,6 @@
 import Image from "next/image";
 import kitchen3 from "../../public/kitchen3.jpg";
 import kitchen2 from "../../public/kitchen2.jpg"
-import buildingblueprint from "../../public/buildingblueprint.jpg"
-import fireextinguisherinstall from "../../public/fireextinguisherinstall.jpg"
 import Form from "../ui/form/Form";
 import { BsChevronDown, BsChevronUp, BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
 import Button3 from "../ui/button3/Button3";

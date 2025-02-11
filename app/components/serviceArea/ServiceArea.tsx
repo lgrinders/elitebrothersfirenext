@@ -10,6 +10,7 @@ const ServiceArea = () => {
         <img
           src="/servicearea.svg"
           className="h-[120px] w-[500px] sm:h-[130px] sm:w-[500px] md:h-[110px] md:w-[400px] lg:h-[150px] lg:w-[500px] xl:h-[200px] xl:w-[900px]"
+          alt=""
         />
 
         <article className="flex flex-col justify-start gap-5">

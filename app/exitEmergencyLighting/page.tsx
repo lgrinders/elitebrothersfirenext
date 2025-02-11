@@ -4,7 +4,6 @@ import Image from "next/image";
 import exitLight2 from "../../public/exitlight2.jpg";
 import lightMaintenance from "../../public/lightmaintenance.jpg";
 import bulb from "../../public/bulb.jpg"
-import fireextinguisherinstall from "../../public/fireextinguisherinstall.jpg"
 import Form from "../ui/form/Form";
 import { BsChevronDown, BsChevronUp, BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
 import Button3 from "../ui/button3/Button3";
