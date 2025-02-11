@@ -74,8 +74,8 @@ export default function FireSuppression() {
                 <div className="pt-20 -mt-10 md:px-14 px-5 flex gap-5 flex-col bg-neutral-100 pb-10">
                     <article className="flex flex-col gap-5">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl">WHAT WE PROVIDE</h2>
-                        <p className="text-sm text-neutral-600 lg:text-lg">We'll find the best system for your business. We work with
-                            commercial kitchens, hospitals, hotels, retail stores, and more. Contact us now for same-day service. We're
+                        <p className="text-sm text-neutral-600 lg:text-lg">We will find the best system for your business. We work with
+                            commercial kitchens, hospitals, hotels, retail stores, and more. Contact us now for same-day service. We are
                             here to keep you safe.</p>
                     </article>
 
