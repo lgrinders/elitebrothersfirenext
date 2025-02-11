@@ -31,16 +31,16 @@ export default function Carousel() {
   ];
 
   return (
-    <div className="overflow-hidden text-white" ref={emblaRef}>
+    <div className="overflow-hidden text-white select-none" ref={emblaRef}>
       <div className="flex">
         {imageData.map((imageItem) => (
           <div
             key={`${imageItem.id}`}
-            className="embla__slide relative h-[550px] xl:h-[650px] select-none"
+            className="embla__slide relative h-[550px] xl:h-[650px]"
           >
             <Image
               src={imageItem.image}
-              className="object-cover pointer-events-none"
+              className="object-cover"
               alt=""
               fill
               priority={true}

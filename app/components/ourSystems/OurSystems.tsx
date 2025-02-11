@@ -9,7 +9,7 @@ export const ourSystemsData = [
     id: 0,
     title: "Fire Extinguishers",
     image: fireextinguishing,
-    path: "/fire-extinguisher-services",
+    path: "/fireextinguishers",
     paragraph:
       "At Elite Brothers Fire & Safety, we offer a comprehensive range of fire extinguisher services, including sales, maintenance, and inspections.",
   },
@@ -17,7 +17,7 @@ export const ourSystemsData = [
     id: 1,
     title: "Kitchen Fire Suppression",
     image: kitchen,
-    path: "/fire-suppression-services",
+    path: "/firesuppression",
     paragraph:
       "We specialize in the installation, maintenance, and repair of various fire suppression systems, ensuring they are tailored to your specific environment and needs.",
   },
@@ -25,7 +25,7 @@ export const ourSystemsData = [
     id: 2,
     title: "Emergency Lighting",
     image: exitsign,
-    path: "/emergency-lighting-services",
+    path: "/exitemergencylighting",
     paragraph:
       "At Elite Brothers Fire & Safety, we provide comprehensive services for the installation, maintenance, and inspection of exit and emergency lighting systems.",
   },

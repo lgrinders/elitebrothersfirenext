@@ -331,7 +331,7 @@ export const navigationData = [
       {
         id: 7,
         label: "Fire Suppression",
-        path: "/fire-suppression-services",
+        path: "/firesuppression",
       },
     ],
   },
