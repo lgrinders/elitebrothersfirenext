@@ -1,12 +1,11 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function POST(req: Request) {
+// export POST function
+export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const { firstName, lastName, email, phoneNumber, company, textArea } = body;
-
-    console.log(firstName, lastName, email, phoneNumber, company, textArea);
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -36,7 +35,15 @@ export async function POST(req: Request) {
         { status: 500 },
       );
     }
-  } catch (error) {
+  } 
+  
+  
+  
+  
+  
+  
+  
+  catch (error) {
     console.error(error);
     return NextResponse.json(
       { message: "Error processing form" },
