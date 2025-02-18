@@ -12,7 +12,6 @@ import { BsChevronDown, BsChevronUp, BsFacebook, BsFillPinMapFill, BsYelp } from
 import Button3 from "../ui/button3/Button3";
 import { useState } from "react";
 import farmland from "../../public/farmland.jpg";
-import Link from "next/link";
 
 export default function Faq() {
     const [currentIdx, setCurrentIdx] = useState<number | null>(0);
