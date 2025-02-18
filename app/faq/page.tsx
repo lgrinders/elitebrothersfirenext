@@ -5,58 +5,48 @@ import extinguisher2 from "../../public/extinguisher2.jpg";
 import fireextinguishertesting from "../../public/fireextinguishertesting.jpg"
 import buildingblueprint from "../../public/buildingblueprint.jpg"
 import fireextinguisherinstall from "../../public/fireextinguisherinstall.jpg"
+import expire from "../../public/lightmaintenance.jpg";
+import lights from "../../public/bulb.jpg";
 import Form from "../ui/form/Form";
 import { BsChevronDown, BsChevronUp, BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
 import Button3 from "../ui/button3/Button3";
 import { useState } from "react";
-import extinguishImage from "../../public/extinguishing.jpg"
+import farmland from "../../public/farmland.jpg";
 import Link from "next/link";
 
-export default function FireExtinguishers() {
+export default function Faq() {
     const [currentIdx, setCurrentIdx] = useState<number | null>(0);
 
-    const aboutFAQ = [
+    const FAQ = [
         {
-            title: "FIRE EXTINGUISHER INSPECTIONS",
-            description: "Regular inspections of your fire extinguishers are crucial to you and your business safety. Get your facilitys extinguishers inspected for their location, accessibility, and functionality. Our licensed team will make sure that your extinguishers are fully up to code and ready if you ever need them.",
-            points: [
-                "The right type of extinguisher",
-                "Correct extinguisher placement",
-                "Regular fire extinguisher inspections",
-                "New extinguisher installations"
-            ],
+            title: "WHAT ARE FIRE SUPPRESSION SYSTEMS?",
+            description: "Fire suppression systems provide an immediate response during a fire. This response helps quell the flames within the first few minutes, which can be crucial for protecting lives and property. Elite Brothers Fire & Safety is licensed to work with fire suppression systems with annual licensure renewal.",
             image: extinguisher2,
         },
         {
-            title: "FIRE EXTINGUISHER TESTING",
-            description: "Testing of your current fire extinguishers is important when maintaining a safe facility. When you reach for a fire extinguisher in an emergency you want to be certain that the extinguisher in your hand is going to work. Elite Brothers Fire has got your need covered.",
-            points: [
-                "Testing of your current extinguishers",
-                "Replacement or refills of extinguishers",
-                "Certified inspections"
-            ],
+            title: "WHAT IS THE MOST EFFECTIVE ENGINEERED FIRE SUPPRESSION SYSTEM?",
+            description: "The most effective fire suppression system is one that's specifically designed for your unique needs. Elite Brothers Fire & Safety will work with you to assess your situation and recommend the best possible solution.",
             image: fireextinguishertesting,
         },
         {
-            title: "BUILDING CONSIDERATIONS",
-            description: "At Elite Brothers Fire & Safety, well sell and service a range of fire extinguishers to meet the needs of any property.",
-            points: [
-                "Building size and layout",
-                "Type of business",
-                "Local safety and building codes",
-                "Placement regulations"
-            ],
+            title: "HOW LONG DO FIRE EXTINGUISHERS LAST?",
+            description: "Fire extinguishers are great safety tools, but their lifespans are limited. They need to be replaced from time to time. The specific replacement timeline will vary depending on your extinguisher. At Elite Brothers Fire & Safety, we will provide you with the guidance you need to keep your equipment code-compliant.",
             image: buildingblueprint,
         },
         {
-            title: "FIRE EXTINGUISHER INSTALLATIONS",
-            description: "No matter the building, types of extinguishers needed or the amount, Elite Brothers Fire has you covered. Reach out to us today and we can give you a quote today.",
-            points: [
-                "Certified fire extinguisher installations",
-                "Proper extinguisher placement",
-                "The right extinguishers for your case"
-            ],
+            title: "DO FIRE EXTINGUISHERS EXPIRE?",
+            description: "Every fire extinguisher has an expiration date. You need annual service to keep your extinguishers in good, working condition. Some Authority Having Jurisdiction guidelines may require you to have monthly inspections. At Elite Brothers Fire & Safety, we have comprehensive services for your fire extinguishers. In addition to installation, we can provide ongoing maintenance to ensure your property is compliant with local codes. We’re committed to keeping you safe in the case of a fire.",
+            image: expire,
+        },
+        {
+            title: "HOW MANY FIRE EXTINGUISHERS DO I NEED?",
+            description: "According to fire extinguisher requirements, all businesses must have the right number of extinguishers on each floor of the facility. The National Fire Protection Agency provides specific guidelines based on the type of business and other criteria. Once our technicians have assessed your business, we can provide you with a recommendation on the number of extinguishers needed to protect your property.",
             image: fireextinguisherinstall,
+        },
+        {
+            title: "HOW DOES ELITE BROTHERS FIRE & SAFETY MAINTAIN YOUR EMERGENCY LIGHTS?",
+            description: "You can count on Elite Brothers Fire & Safety to provide monthly maintenance and annual inspections. We’ll make sure you meet emergency lighting testing requirements. Let us provide you with confidence in the performance of your safety lighting systems.",
+            image: lights,
         },
     ];
 
@@ -71,7 +61,7 @@ export default function FireExtinguishers() {
                 <div className="flex justify-center relative h-full items-center">
                     <Image
                         priority={true}
-                        src={extinguishImage}
+                        src={farmland}
                         className="object-cover"
                         fill
                         alt=""
@@ -85,17 +75,10 @@ export default function FireExtinguishers() {
 
 
                 <div className="px-5 z-10 lg:px-14 mx-5 lg:mx-32 md:px-14 py-10 rounded-md bg-white flex flex-col gap-5">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl">FIRE EXTINGUISHERS</h1>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl">FAQ</h1>
                     <article className="flex flex-col gap-5 text-sm text-neutral-600 lg:text-lg">
-                        <p className="">Fire extinguishers are a critical first line of defense against
-                            small fires, enabling safe evacuation and mitigating potential damage. However,
-                            not all fires are the same—there are five distinct classifications, some requiring
-                            a specific extinguishing agent for effective suppression. Our certified fire extinguisher
-                            specialists will assess your facility and provide tailored recommendations to ensure optimal
-                            fire protection.</p>
-                        <p>Whether you operate a commercial kitchen, an industrial facility, or any other
-                            business environment, we offer a comprehensive range of extinguishing solutions designed to safeguard
-                            your personnel, property, and operations.</p>
+                        <p className="">Get all of your questions about Elite BrIf you want more specialized information about fire extinguishers, fire suppression or exit/emergency lighting consider checking out our services pages, accessible from the navigation area.others Fire & Safety here!</p>
+                        <p>For more specialized information about fire extinguishers, fire suppression, or exit/emergency lighting, consider checking out our services pages accessible from the navigation area. If you have further questions feel free to call or submit a form.</p>
                     </article>
                     <Button3 name="REQUEST QUOTE" to="/contact" />
                 </div>
@@ -103,17 +86,10 @@ export default function FireExtinguishers() {
 
 
                 <div className="pt-20 -mt-10 md:px-14 px-5 flex gap-5 flex-col bg-neutral-100 pb-10">
-                    <article className="flex flex-col gap-5">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl">WHAT WE PROVIDE</h2>
-                        <p className="text-sm text-neutral-600 lg:text-lg">At Elite Brothers Fire we provide any type of fire extinguisher to fit your needs, proper fire extinguisher
-                            placement, regular fire extinguisher inspections, and fire extinguisher installations.
-                            We consider everything from your building size and layout to placement regulations while following
-                            local safety and building codes. When you work with us you know you are getting quality service from a
-                            local family-owned business that is fully licensed.</p>
-                    </article>
+
 
                     <div>
-                        {aboutFAQ.map((item, idx) => (
+                        {FAQ.map((item, idx) => (
                             <div
                                 key={idx}
                                 className={`${currentIdx === idx ? 'bg-white' : "bg-neutral-200"} hover:bg-white cursor-pointer duration-500 md:flex flex-col border-b-2 last-of-type:border-0 last-of-type:shadow-xl border-neutral-100 first-of-type:rounded-t-md last-of-type:rounded-b-md p-5 md:p-14`}
@@ -125,12 +101,8 @@ export default function FireExtinguishers() {
                                 </div>
 
                                 <div className={`overflow-hidden transition-max-height duration-500 ease-in-out justify-between flex flex-col lg:flex-row gap-5 ${currentIdx === idx ? "max-h-screen" : "max-h-0"}`}>
-                                    <div className="gap-5 flex flex-col text-sm text-neutral-600 lg:text-lg">
+                                    <div className="gap-5 flex flex-col text-sm justify-between text-neutral-600 lg:text-lg">
                                         <p>{item.description}</p>
-                                        <h4 className="text-xl font-semibold">We Provide</h4>
-                                        <ul className="list-disc list-inside flex flex-col gap-1">
-                                            {item.points.map((point, i) => <li key={i}>{point}</li>)}
-                                        </ul>
                                         <p>With our help you can be prepared for a fire. We renew our fire extinguisher license annually to ensure that we are up to date. <Link href="/contact" className="underline text-EliteRed">Get in touch</Link> with us now for a same-day appointment or same-day service!</p>
                                     </div>
                                     <div className="flex justify-center md:justify-end">
