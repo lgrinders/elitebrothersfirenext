@@ -103,7 +103,6 @@ export default function Faq() {
                                 <div className={`overflow-hidden transition-max-height duration-500 ease-in-out justify-between flex flex-col lg:flex-row gap-5 ${currentIdx === idx ? "max-h-screen" : "max-h-0"}`}>
                                     <div className="gap-5 flex flex-col text-sm justify-between text-neutral-600 lg:text-lg">
                                         <p>{item.description}</p>
-                                        <p>With our help you can be prepared for a fire. We renew our fire extinguisher license annually to ensure that we are up to date. <Link href="/contact" className="underline text-EliteRed">Get in touch</Link> with us now for a same-day appointment or same-day service!</p>
                                     </div>
                                     <div className="flex justify-center md:justify-end">
                                         <div className="h-96 w-full lg:h-96 lg:w-96 relative">
