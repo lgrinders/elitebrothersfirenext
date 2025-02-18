@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import Form from "../ui/form/Form";
-import { BsChevronDown, BsChevronUp, BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
+import { BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
 import Button3 from "../ui/button3/Button3";
-import { useState } from "react";
+
 import nashville from "../../public/Nashville.jpg";
-import Link from "next/link";
+
 
 const About = () => {
 
