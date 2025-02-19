@@ -8,10 +8,11 @@ import fireextinguisherinstall from "../../public/fireextinguisherinstall.jpg"
 import expire from "../../public/lightmaintenance.jpg";
 import lights from "../../public/bulb.jpg";
 import Form from "../ui/form/Form";
-import { BsChevronDown, BsChevronUp, BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
+import { BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
 import Button3 from "../ui/button3/Button3";
 import { useState } from "react";
 import farmland from "../../public/farmland.jpg";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function Faq() {
     const [currentIdx, setCurrentIdx] = useState<number | null>(0);
@@ -96,7 +97,7 @@ export default function Faq() {
                             >
                                 <div className="flex justify-between items-centers">
                                     <h3 className="font-bold text-xl py-5">{item.title}</h3>
-                                    <span className="p-5">{currentIdx === idx ? <BsChevronUp /> : <BsChevronDown />}</span>
+                                    <span className="p-5 text-3xl">{currentIdx === idx ? <FaChevronUp /> : <FaChevronDown />}</span>
                                 </div>
 
                                 <div className={`overflow-hidden transition-max-height duration-500 ease-in-out justify-between flex flex-col lg:flex-row gap-5 ${currentIdx === idx ? "max-h-screen" : "max-h-0"}`}>

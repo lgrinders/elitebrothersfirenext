@@ -106,7 +106,6 @@ const About = () => {
                                 <div className={`overflow-hidden transition-max-height duration-500 ease-in-out justify-between flex flex-col lg:flex-row gap-5`}>
                                     <div className="gap-5 flex flex-col text-sm text-neutral-600 lg:text-lg">
                                         <p>{item.description}</p>
-                                        <h4 className="text-xl font-semibold">We Provide</h4>
                                         <ul className="list-disc list-inside flex flex-col gap-1">
                                             {item.points.map((point, i) => <li key={i}>{point}</li>)}
                                         </ul>
