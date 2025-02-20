@@ -47,7 +47,7 @@ const OurSystems = () => {
             fire extinguisher sales and services
           </span>
           , <span className="font-bold">fire suppression system services</span>{" "}
-          and
+          and{" "}
           <span className="font-bold">
             exit and emergency lighting services.
           </span>

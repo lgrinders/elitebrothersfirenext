@@ -8,7 +8,7 @@ import ContactInfo from "../ui/contactInfo/ContactInfo";
 
 const Contact = () => (
     <section>
-        <div className="fixed w-full mt-[80px] top-0 h-[300px] -z-10">
+        <div className="fixed w-full mt-[50px]  sm:mt-[80px] top-0 h-[350px] -z-10">
             <div className="relative h-full flex justify-center items-center">
                 <Image
                     priority={true}
