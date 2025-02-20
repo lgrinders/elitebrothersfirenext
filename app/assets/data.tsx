@@ -325,8 +325,8 @@ export const navigationData = [
       },
       {
         id: 6,
-        label: "Exit / Emergency Lighting",
-        path: "/exitemergencylighting",
+        label: "Emergency / Exit Lighting",
+        path: "/emergencyexitlighting",
       },
       {
         id: 7,

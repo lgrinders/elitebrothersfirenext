@@ -12,7 +12,7 @@ import exitSign from "../../public/exitsign.jpg";
 import Link from "next/link";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-export default function ExitEmergencyLighting() {
+export default function EmergencyExitLighting() {
     const [currentIdx, setCurrentIdx] = useState<number | null>(0);
 
     const fireFAQ = [
