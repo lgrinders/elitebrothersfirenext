@@ -9,6 +9,7 @@ export default function Logo() {
       <img
         src="/elitebrotherslogowide.svg"
         className="w-12 h-12 lg:h-14 lg:w-14"
+        alt="Elite Brothers Flame Logo"
       />
       <div className="font-black italic flex flex-col leading-4">
         <span>ELITE</span>

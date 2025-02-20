@@ -1,10 +1,16 @@
-"use client";
-
 import Image from "next/image";
 import contact from "../../public/customer-service.jpg";
 import Form from "../ui/form/Form";
 import { BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
 import ContactInfo from "../ui/contactInfo/ContactInfo";
+
+export const metadata = {
+    title: "Contact",
+    description:
+        "Contact Elite Brothers Fire & Safety with any questions or concers that you may have.",
+    keywords:
+        "Call, Elite Brothers Fire & Safety, Contact, Fire Extinguisher, Email",
+}
 
 const Contact = () => (
     <section>
