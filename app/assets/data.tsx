@@ -320,17 +320,17 @@ export const navigationData = [
     children: [
       {
         id: 5,
-        label: "Fire Extinguishers Info",
+        label: "Fire Extinguishers",
         path: "/fireextinguishers",
       },
       {
         id: 6,
-        label: "Emergency / Exit Lighting Info",
+        label: "Emergency / Exit Lighting",
         path: "/emergencyexitlighting",
       },
       {
         id: 7,
-        label: "Fire Suppression Info",
+        label: "Fire Suppression",
         path: "/firesuppression",
       },
     ],

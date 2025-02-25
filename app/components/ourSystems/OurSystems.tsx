@@ -10,6 +10,7 @@ export const ourSystemsData = [
     title: "Fire Extinguishers",
     image: fireextinguishing,
     path: "/fireextinguishers",
+    button: "Extinguisher Info",
     paragraph:
       "At Elite Brothers Fire & Safety, we offer a comprehensive range of fire extinguisher services, including sales, maintenance, and inspections.",
   },
@@ -18,6 +19,7 @@ export const ourSystemsData = [
     title: "Kitchen Fire Suppression",
     image: kitchen,
     path: "/firesuppression",
+    button: "Suppression Info",
     paragraph:
       "We specialize in the installation, maintenance, and repair of various fire suppression systems, ensuring they are tailored to your specific environment and needs.",
   },
@@ -26,6 +28,7 @@ export const ourSystemsData = [
     title: "Emergency Lighting",
     image: exitsign,
     path: "/exitemergencylighting",
+    button: "Lighting Info",
     paragraph:
       "At Elite Brothers Fire & Safety, we provide comprehensive services for the installation, maintenance, and inspection of exit and emergency lighting systems.",
   },
@@ -77,7 +80,7 @@ const OurSystems = () => {
                 </p>
                 <Button2
                   to={dataItem.path}
-                  name="LEARN MORE"
+                  name={dataItem.button}
                 />
               </div>
             </div>
