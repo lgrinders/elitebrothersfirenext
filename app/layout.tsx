@@ -6,7 +6,7 @@ import Footer from "./components/footer/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "Fire & Safety | Elite Brothers Fire | Nashville, TN",
+    default: "Elite Brothers Fire | Fire & Safety | Nashville, TN",
     template: "%s | Elite Brothers Fire | Nashville, TN",
   },
   metadataBase: new URL("https://elitebrothersfire.com"),
