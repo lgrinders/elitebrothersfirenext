@@ -16,12 +16,14 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/people/Elite-Brothers-Fire-and-Safety/100079015032455/"
               target="_blank"
+              aria-label="Elite Brothers Fire Facebook"
             >
               <BsFacebook size={20} className="duration-200 hover:text-EliteRed" />
             </a>
             <a
               href="https://www.yelp.com/biz/elite-brothers-fire-and-safety-bethpage?utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=MFyzcjahxBMNAyHg85HGjg"
               target="_blank"
+              aria-label="Elite Brothers Fire Yelp"
             >
               <BsYelp size={20} className="duration-200 hover:text-EliteRed" />
             </a>

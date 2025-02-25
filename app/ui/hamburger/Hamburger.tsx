@@ -16,8 +16,10 @@ const Hamburger = ({
   return (
     <button
       ref={ref}
-      className="group "
+      className="group"
       onClick={() => setSideNavigationShowing(!sideNavigationShowing)}
+      aria-label="Toggle side navigation"
+      aria-expanded={sideNavigationShowing}
     >
       <div className="grid justify-items-center gap-1.5">
         <span

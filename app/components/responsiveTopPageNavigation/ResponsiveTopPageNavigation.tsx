@@ -48,9 +48,8 @@ const ResponsiveTopPageNavigation = () => {
 
       <div
         ref={sideNavRef}
-        className={`absolute top-20 left-0 h-screen w-4/5 bg-white transition-transform duration-500 flex ${
-          sideNavigationShowing ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`absolute top-20 left-0 h-screen w-4/5 bg-white transition-transform duration-500 flex ${sideNavigationShowing ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         <nav className="w-full">
           <ul className="flex flex-col">
