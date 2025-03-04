@@ -43,7 +43,7 @@ export default function Carousel() {
               className="object-cover"
               alt=""
               fill
-              priority={true}
+              priority={imageItem.id === 0 ? true : false}
               placeholder="blur"
               sizes="100vw"
               quality={100}
