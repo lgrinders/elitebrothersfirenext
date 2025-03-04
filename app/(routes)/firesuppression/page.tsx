@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Form from "../ui/form/Form";
+import Form from "@/app/ui/form/Form";
 import { BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
-import Button3 from "../ui/button3/Button3";
-import kitchen from "../../public/kitchen.jpg";
-import FireSuppressionMap from "../components/firesuppressionmap/FireSuppressionMap";
+import Button3 from "@/app/ui/button3/Button3";
+import kitchen from "../../../public/kitchen.jpg";
+import FireSuppressionMap from "@/app/components/firesuppressionmap/FireSuppressionMap";
 
 
 export const metadata = {

@@ -1,59 +1,57 @@
 "use client";
 
 import Image from "next/image";
-import Form from "../ui/form/Form";
+import extinguisher2 from "../../../public/extinguisher2.jpg";
+import fireextinguishertesting from "../../../public/fireextinguishertesting.jpg"
+import buildingblueprint from "../../../public/buildingblueprint.jpg"
+import fireextinguisherinstall from "../../../public/fireextinguisherinstall.jpg"
+import expire from "../../../public/lightmaintenance.jpg";
+import lights from "../../../public/bulb.jpg";
+import Form from "@/app/ui/form/Form";
 import { BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
-import Button3 from "../ui/button3/Button3";
+import Button3 from "@/app/ui/button3/Button3";
+import { useState } from "react";
+import farmland from "../../../public/farmland.jpg";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-import nashville from "../../public/Nashville.jpg";
+export default function Faq() {
+    const [currentIdx, setCurrentIdx] = useState<number | null>(0);
 
-
-const About = () => {
-
-    const fireFAQ = [
+    const FAQ = [
         {
-            title: "SERVICES",
-            description: "We have you covered on all of the following services.",
-            points: [
-                "Fire Extinguishers",
-                "Kitchen Fire Suppression",
-                "Emergency Lighting",
-                "Fire Product Sales"
-            ],
+            title: "WHAT ARE FIRE SUPPRESSION SYSTEMS?",
+            description: "Fire suppression systems provide an immediate response during a fire. This response helps quell the flames within the first few minutes, which can be crucial for protecting lives and property. Elite Brothers Fire & Safety is licensed to work with fire suppression systems with annual licensure renewal.",
+            image: extinguisher2,
         },
         {
-            title: "SPECIALTIES",
-            description: "Rest assured that Elite Brothers Fire & Safety has you covered.",
-            points: [
-                "Dry Chemical Fire Control",
-                "Exit and Emergency Lighting",
-                "Fire Suppression Systems",
-                "Fire Extinguisher Sales and Service",
-            ],
+            title: "WHAT IS THE MOST EFFECTIVE ENGINEERED FIRE SUPPRESSION SYSTEM?",
+            description: "The most effective fire suppression system is one that's specifically designed for your unique needs. Elite Brothers Fire & Safety will work with you to assess your situation and recommend the best possible solution.",
+            image: fireextinguishertesting,
         },
         {
-            title: "PAYMENT OPTIONS",
-            description: "Diverse payment options make interactions as smooth as possible.",
-            points: [
-                "Cash",
-                "Check",
-                "Discover",
-                "Invoice",
-                "MasterCard",
-                "Visa",
-                "Online payments through QuickBookss",
-            ],
+            title: "HOW LONG DO FIRE EXTINGUISHERS LAST?",
+            description: "Fire extinguishers are great safety tools, but their lifespans are limited. They need to be replaced from time to time. The specific replacement timeline will vary depending on your extinguisher. At Elite Brothers Fire & Safety, we will provide you with the guidance you need to keep your equipment code-compliant.",
+            image: buildingblueprint,
         },
         {
-            title: "HOLIDAY HOURS",
-            points: [
-                "Monday, May 26, 2025 : Closed",
-                "Friday, July 4, 2025 : Closed",
-                "Monday, September 1, 2025 : Closed"
-            ],
+            title: "DO FIRE EXTINGUISHERS EXPIRE?",
+            description: "Every fire extinguisher has an expiration date. You need annual service to keep your extinguishers in good, working condition. Some Authority Having Jurisdiction guidelines may require you to have monthly inspections. At Elite Brothers Fire & Safety, we have comprehensive services for your fire extinguishers. In addition to installation, we can provide ongoing maintenance to ensure your property is compliant with local codes. We’re committed to keeping you safe in the case of a fire.",
+            image: expire,
+        },
+        {
+            title: "HOW MANY FIRE EXTINGUISHERS DO I NEED?",
+            description: "According to fire extinguisher requirements, all businesses must have the right number of extinguishers on each floor of the facility. The National Fire Protection Agency provides specific guidelines based on the type of business and other criteria. Once our technicians have assessed your business, we can provide you with a recommendation on the number of extinguishers needed to protect your property.",
+            image: fireextinguisherinstall,
+        },
+        {
+            title: "HOW DOES ELITE BROTHERS FIRE & SAFETY MAINTAIN YOUR EMERGENCY LIGHTS?",
+            description: "You can count on Elite Brothers Fire & Safety to provide monthly maintenance and annual inspections. We’ll make sure you meet emergency lighting testing requirements. Let us provide you with confidence in the performance of your safety lighting systems.",
+            image: lights,
         },
     ];
 
+
+    const handleCurrentIdx = (getCurrentIdx: number) => setCurrentIdx(currentIdx === getCurrentIdx ? null : getCurrentIdx);
 
     return (
         <section className="text-sm md:text-base">
@@ -63,7 +61,7 @@ const About = () => {
                 <div className="flex justify-center relative h-full items-center">
                     <Image
                         priority={true}
-                        src={nashville}
+                        src={farmland}
                         className="object-cover"
                         fill
                         alt=""
@@ -77,42 +75,39 @@ const About = () => {
 
 
                 <div className="px-5 z-10 lg:px-14 mx-5 lg:mx-32 md:px-14 py-10 rounded-md bg-white flex flex-col gap-5">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl">ABOUT ELITE BROTHERS FIRE</h1>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl">FAQ</h1>
                     <article className="flex flex-col gap-5 text-sm text-neutral-600 lg:text-lg">
-                        <p className="">Elite Brothers Fire & Safety provides fire extinguisher services, fire suppression systems and safety lighting solutions in the Nashville, TN area. <span className="font-bold">We offer 24/7 emergency services and same-day appointments.</span> Established in 2021 our goal is to give you the best experince possible while also addressing all of your fire & safety needs.</p>
+                        <p className="">Get all of your questions about Elite BrIf you want more specialized information about fire extinguishers, fire suppression or exit/emergency lighting consider checking out our services pages, accessible from the navigation area.others Fire & Safety here!</p>
+                        <p>For more specialized information about fire extinguishers, fire suppression, or exit/emergency lighting, consider checking out our services pages accessible from the navigation area. If you have further questions feel free to call or submit a form.</p>
                     </article>
                     <Button3 name="REQUEST QUOTE" to="/contact" />
                 </div>
 
 
 
-                <div className="pt-20 -mt-10 md:px-14 px-5 flex gap-5 flex-col bg-neutral-100">
-                    <article className="flex flex-col gap-5">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl">WHAT WE PROVIDE</h2>
-                    </article>
+                <div className="pt-20 -mt-10 md:px-14 px-5 flex gap-5 flex-col bg-neutral-100 pb-10">
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 pb-10">
-                        {fireFAQ.map((item, idx) => (
+
+                    <div>
+                        {FAQ.map((item, idx) => (
                             <div
                                 key={idx}
-                                className="bg-white hover:bg-neutral-200 cursor-pointer duration-500 md:flex flex-col p-5 md:p-14"
-
+                                className={`${currentIdx === idx ? 'bg-white' : "bg-neutral-200"} hover:bg-white cursor-pointer duration-500 md:flex flex-col border-b-2 last-of-type:border-0 last-of-type:shadow-xl border-neutral-100 first-of-type:rounded-t-md last-of-type:rounded-b-md p-5 md:p-14`}
+                                onClick={() => handleCurrentIdx(idx)}
                             >
                                 <div className="flex justify-between items-centers">
                                     <h3 className="font-bold text-xl py-5">{item.title}</h3>
-
+                                    <span className="p-5 text-3xl">{currentIdx === idx ? <FaChevronUp /> : <FaChevronDown />}</span>
                                 </div>
 
-                                <div className={`overflow-hidden transition-max-height duration-500 ease-in-out justify-between flex flex-col lg:flex-row gap-5`}>
-                                    <div className="gap-5 flex flex-col text-sm text-neutral-600 lg:text-lg">
+                                <div className={`overflow-hidden transition-max-height duration-500 ease-in-out justify-between flex flex-col lg:flex-row gap-5 ${currentIdx === idx ? "max-h-screen" : "max-h-0"}`}>
+                                    <div className="gap-5 flex flex-col text-sm justify-between text-neutral-600 lg:text-lg">
                                         <p>{item.description}</p>
-                                        <ul className="list-disc list-inside flex flex-col gap-1">
-                                            {item.points.map((point, i) => <li key={i}>{point}</li>)}
-                                        </ul>
-
                                     </div>
                                     <div className="flex justify-center md:justify-end">
-
+                                        <div className="h-96 w-full lg:h-96 lg:w-96 relative">
+                                            <Image src={item.image} fill className="object-cover rounded-md" alt="" sizes="100vh" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +193,5 @@ const About = () => {
                 </div>
             </div>
         </section>
-    )
+    );
 }
-
-export default About

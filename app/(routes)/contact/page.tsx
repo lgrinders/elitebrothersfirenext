@@ -1,8 +1,8 @@
 import Image from "next/image";
-import contact from "../../public/customer-service.jpg";
-import Form from "../ui/form/Form";
+import contact from "../../../public/customer-service.jpg";
+import Form from "@/app/ui/form/Form";
 import { BsFacebook, BsFillPinMapFill, BsYelp } from "react-icons/bs";
-import ContactInfo from "../ui/contactInfo/ContactInfo";
+import ContactInfo from "@/app/ui/contactInfo/ContactInfo";
 
 export const metadata = {
     title: "Contact",
