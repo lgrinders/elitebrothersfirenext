@@ -34,22 +34,8 @@ export default function Carousel() {
     <div className="overflow-hidden text-white select-none" ref={emblaRef}>
       <div className="flex">
         {imageData.map((imageItem) => (
-          <div
-            key={`${imageItem.id}`}
-            className="embla__slide relative h-[550px] xl:h-[650px]"
-          >
-            <Image
-              src={imageItem.image}
-              className="object-cover"
-              alt=""
-              fill
-              priority={imageItem.id === 0 ? true : false}
-              placeholder="blur"
-              sizes="100vw"
-              quality={100}
-            />
-
-            <div className="z-10 absolute flex w-full h-full flex-col items-center justify-center gap-5 text-center motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-duration-[1.50s] xl:gap-5">
+          <div key={`${imageItem.id}`} className="embla__slide relative">
+            <div className="absolute flex w-full h-full flex-col items-center justify-center gap-5 text-center motion-translate-x-in-[0%] motion-translate-y-in-[100%] motion-duration-[1.50s] xl:gap-5">
               <h1 className="text-4xl font-semibold md:text-5xl lg:text-6xl xl:text-7xl">
                 {imageItem.title}
               </h1>
@@ -63,11 +49,19 @@ export default function Carousel() {
               </div>
               <Button3 to="/contact" name="REQUEST QUOTE" />
             </div>
+
+            <Image
+              src={imageItem.image}
+              className="object-cover h-[550px] xl:h-[650px]"
+              alt=""
+              priority={imageItem.id === 0 ? true : false}
+              placeholder="blur"
+              sizes="100vw"
+              quality={100}
+            />
           </div>
         ))}
       </div>
     </div>
   );
 }
-
-
