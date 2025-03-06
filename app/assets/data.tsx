@@ -335,16 +335,15 @@ export const navigationData = [
       },
     ],
   },
-  { id: 1, label: "Reviews", path: "/reviews" },
   {
-    id: 2,
+    id: 1,
     label: "Info",
     children: [
       { id: 8, label: "About", path: "/about" },
       { id: 9, label: "FAQ", path: "/faq" },
     ],
   },
-  { id: 3, label: "Contact", path: "/contact" },
+  { id: 2, label: "Contact", path: "/contact" },
 ];
 
 export const serviceAreaData = [
