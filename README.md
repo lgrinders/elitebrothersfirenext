@@ -10,4 +10,4 @@
 
 
 
-![Overview of Elite Brothers Fire](![EliteBrothersFireShowcase](https://github.com/user-attachments/assets/05bec485-50ef-4d55-afe5-90eb821b3562))
+![Overview of Elite Brothers Fire]([![EliteBrothersFireShowcase](https://github.com/user-attachments/assets/05bec485-50ef-4d55-afe5-90eb821b3562)](https://github.com/lgrinders/elitebrothersfirenext/blob/9b476f9b70322fbbba712ae52a68f96385f1c10f/EliteBrothersFireShowcase.jpg))
