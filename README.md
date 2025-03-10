@@ -1,13 +1,13 @@
-<h1>Elite Brothers Fire</h1> 
-<p>Elite Brothers Fire is a well designed and easy to use website for a local fire and safety business.</p> 
-<h2>Features</h2> 
+<h1>Elite Brothers Fire</h1>
+<p>Elite Brothers Fire is a well-designed and easy-to-use website for a local fire and safety business.</p>
+<h2>Features</h2>
 <ul> 
-  <li>Mobile friendly carousel which lets users immediately know what the website is for</li> 
-  <li>Beautiful displays of infomation on what the company does and where it does it.</li> 
-  <li>Easy access to contact the company.</li> 
-  <li>Working contact page using nodemailer.</li> 
-</ul>
+  <li>Mobile-friendly carousel that immediately informs users about the website's purpose.</li>
+  <li>Beautiful displays of information about the company's services and service areas.</li>
+  <li>Easy access to contact the company.</li>
+  <li>Working contact page using Nodemailer.</li>
+</ul> 
 
 
 
-![Overview of Elite Brothers Fire]([![EliteBrothersFireShowcase](https://github.com/user-attachments/assets/05bec485-50ef-4d55-afe5-90eb821b3562)](https://github.com/lgrinders/elitebrothersfirenext/blob/9b476f9b70322fbbba712ae52a68f96385f1c10f/EliteBrothersFireShowcase.jpg))
+![Overview of Elite Brother Fire](https://github.com/lgrinders/elitebrothersfirenext/blob/3bebb52a99744783c913d3e82e25fe780505f5c0/EliteBrothersFireShowcase.jpg)
